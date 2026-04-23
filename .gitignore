@@ -1,0 +1,7 @@
+.env
+*.env
+__pycache__/
+*.pyc
+betfree.db
+.pytest_cache/
+.mypy_cache/
