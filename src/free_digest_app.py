@@ -13,12 +13,21 @@ from telegram.ext import Application, CallbackQueryHandler
 
 from src.config import bootstrap_dotenv, get_settings, repo_root, validate_provider_token
 from src.notifier.digest_callback_handlers import on_digest_menu_callback
-from src.notifier.telegram_bot import build_default_notifier
+from src.notifier.telegram_bot import SilentTelegramNotifier, build_default_notifier
 from src.scheduler.jobs import PipelineConfig, build_scheduler, run_prediction_pipeline_free
 from src.storage.database import init_db
 from src.storage.repository import TimeSeriesRepository
 
 LOG = logging.getLogger(__name__)
+
+
+def _truthy_env(val: str) -> bool:
+    return str(val or "").strip().lower() in ("1", "true", "yes", "on")
+
+
+def _digest_skip_telegram_env() -> bool:
+    """BETFREE_DIGEST_SKIP_TELEGRAM=1 ejecuta ingest + modelo + SQLite sin Telegram (GitHub/export)."""
+    return _truthy_env(os.getenv("BETFREE_DIGEST_SKIP_TELEGRAM", ""))
 
 
 def _menu_bot_notify_startup() -> bool:
@@ -118,7 +127,13 @@ def main() -> None:
     validate_provider_token(settings, "free")
     init_db(settings.sqlite_db_path)
     repo = TimeSeriesRepository(settings.sqlite_db_path)
-    notifier = build_default_notifier()
+    if _digest_skip_telegram_env():
+        notifier = SilentTelegramNotifier()
+        LOG.info(
+            "BETFREE_DIGEST_SKIP_TELEGRAM activo → sin envío Telegram; predicciones y audit igual se guardan en SQLite."
+        )
+    else:
+        notifier = build_default_notifier()
     cfg = PipelineConfig(bankroll=args.bankroll)
 
     async def job() -> None:

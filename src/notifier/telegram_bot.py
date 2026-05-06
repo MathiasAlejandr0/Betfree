@@ -69,5 +69,26 @@ class TelegramNotifier:
             await self.send_html(chunk.rstrip(), chat_id=chat_id)
 
 
+class SilentTelegramNotifier:
+    """Misma superficie asíncrona que TelegramNotifier pero sin enviar mensajes."""
+
+    async def send_html(self, text: str, *, chat_id: str | None = None) -> None:
+        _ = text, chat_id
+
+    async def send_digest_hub(self, text: str, reply_markup: Any, *, chat_id: str | None = None) -> None:
+        _ = text, reply_markup, chat_id
+
+    async def send_chunked_parts(
+        self,
+        header: str,
+        blocks: list[str],
+        *,
+        continuation_header: str | None = None,
+        max_len: int = 3800,
+        chat_id: str | None = None,
+    ) -> None:
+        _ = header, blocks, continuation_header, max_len, chat_id
+
+
 def build_default_notifier() -> TelegramNotifier:
     return TelegramNotifier(settings=get_settings())

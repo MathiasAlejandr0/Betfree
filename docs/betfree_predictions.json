@@ -1,6 +1,6 @@
 {
-  "schema": "betfree.pages_predictions.v1",
-  "generated_at_utc": "2026-05-06T00:20:14.580349+00:00",
+  "schema": "betfree.pages_predictions.v2",
+  "generated_at_utc": "2026-05-06T01:28:40.990673+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
@@ -14,7 +14,38 @@
       "p_away": 0.3451,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:32"
+      "ts_utc": "2026-05-06 01:27:48",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Deportivo Recoleta"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Santos"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3959,
+          "p_draw": 0.2564,
+          "p_away": 0.3478,
+          "x_goals_home": 1.415,
+          "x_goals_away": 1.31,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        }
+      }
     },
     {
       "event_id": 401865425,
@@ -27,7 +58,38 @@
       "p_away": 0.3451,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:32"
+      "ts_utc": "2026-05-06 01:27:48",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Academia Puerto Cabello"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Cienciano del Cusco"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3959,
+          "p_draw": 0.2564,
+          "p_away": 0.3478,
+          "x_goals_home": 1.415,
+          "x_goals_away": 1.31,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        }
+      }
     },
     {
       "event_id": 401865427,
@@ -40,20 +102,38 @@
       "p_away": 0.3451,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:32"
-    },
-    {
-      "event_id": 401862896,
-      "local_date_iso": "2026-05-05",
-      "slug": "uefa.champions",
-      "home_team": "Arsenal",
-      "away_team": "Atlético Madrid",
-      "p_home": 0.6614,
-      "p_draw": 0.2087,
-      "p_away": 0.1299,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:31"
+      "ts_utc": "2026-05-06 01:27:48",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Deportivo Cuenca"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "San Lorenzo"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3959,
+          "p_draw": 0.2564,
+          "p_away": 0.3478,
+          "x_goals_home": 1.415,
+          "x_goals_away": 1.31,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        }
+      }
     },
     {
       "event_id": 401865428,
@@ -66,7 +146,38 @@
       "p_away": 0.3451,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:31"
+      "ts_utc": "2026-05-06 01:27:48",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Deportivo Riestra"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Grêmio"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3959,
+          "p_draw": 0.2564,
+          "p_away": 0.3478,
+          "x_goals_home": 1.415,
+          "x_goals_away": 1.31,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        }
+      }
     },
     {
       "event_id": 401865429,
@@ -79,7 +190,38 @@
       "p_away": 0.3451,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:31"
+      "ts_utc": "2026-05-06 01:27:48",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Independiente Petrolero"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Caracas FC"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3959,
+          "p_draw": 0.2564,
+          "p_away": 0.3478,
+          "x_goals_home": 1.415,
+          "x_goals_away": 1.31,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        }
+      }
     },
     {
       "event_id": 401865430,
@@ -92,7 +234,38 @@
       "p_away": 0.3451,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:31"
+      "ts_utc": "2026-05-06 01:27:48",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Juventud"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Atlético-MG"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3959,
+          "p_draw": 0.2564,
+          "p_away": 0.3478,
+          "x_goals_home": 1.415,
+          "x_goals_away": 1.31,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        }
+      }
     },
     {
       "event_id": 401865522,
@@ -105,7 +278,38 @@
       "p_away": 0.3451,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:31"
+      "ts_utc": "2026-05-06 01:27:48",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Barcelona SC"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Boca Juniors"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3959,
+          "p_draw": 0.2564,
+          "p_away": 0.3478,
+          "x_goals_home": 1.415,
+          "x_goals_away": 1.31,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        }
+      }
     },
     {
       "event_id": 401865523,
@@ -118,20 +322,38 @@
       "p_away": 0.3451,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:31"
-    },
-    {
-      "event_id": 401865529,
-      "local_date_iso": "2026-05-05",
-      "slug": "conmebol.libertadores",
-      "home_team": "Rosario Central",
-      "away_team": "Libertad",
-      "p_home": 0.3928,
-      "p_draw": 0.2621,
-      "p_away": 0.3451,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:31"
+      "ts_utc": "2026-05-06 01:27:48",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Always Ready"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Lanús"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3959,
+          "p_draw": 0.2564,
+          "p_away": 0.3478,
+          "x_goals_home": 1.415,
+          "x_goals_away": 1.31,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        }
+      }
     },
     {
       "event_id": 401865530,
@@ -144,7 +366,38 @@
       "p_away": 0.3451,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:31"
+      "ts_utc": "2026-05-06 01:27:48",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Sporting Cristal"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Palmeiras"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3959,
+          "p_draw": 0.2564,
+          "p_away": 0.3478,
+          "x_goals_home": 1.415,
+          "x_goals_away": 1.31,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        }
+      }
     },
     {
       "event_id": 401865531,
@@ -157,12 +410,131 @@
       "p_away": 0.3451,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-06 00:00:31"
+      "ts_utc": "2026-05-06 01:27:48",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Universidad Central"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Independiente del Valle"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3959,
+          "p_draw": 0.2564,
+          "p_away": 0.3478,
+          "x_goals_home": 1.415,
+          "x_goals_away": 1.31,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        }
+      }
+    },
+    {
+      "event_id": 401862896,
+      "local_date_iso": "2026-05-05",
+      "slug": "uefa.champions",
+      "home_team": "Arsenal",
+      "away_team": "Atlético Madrid",
+      "p_home": 0.6614,
+      "p_draw": 0.2087,
+      "p_away": 0.1299,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-05-06 01:27:47",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 5,
+          "gf_avg": 1.2,
+          "ga_avg": 0.8,
+          "name": "Arsenal"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Atlético Madrid"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.6655,
+          "p_draw": 0.2038,
+          "p_away": 0.1307,
+          "x_goals_home": 1.983,
+          "x_goals_away": 0.742,
+          "yellow_cards_home": 2.59,
+          "yellow_cards_away": 1.46,
+          "yellow_cards_total": 4.05,
+          "corners_home": 5.4,
+          "corners_away": 4.1,
+          "corners_total": 9.5
+        }
+      }
+    },
+    {
+      "event_id": 401865529,
+      "local_date_iso": "2026-05-05",
+      "slug": "conmebol.libertadores",
+      "home_team": "Rosario Central",
+      "away_team": "Libertad",
+      "p_home": 0.3928,
+      "p_draw": 0.2621,
+      "p_away": 0.3451,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-05-06 01:27:47",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Rosario Central"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Libertad"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3959,
+          "p_draw": 0.2564,
+          "p_away": 0.3478,
+          "x_goals_home": 1.415,
+          "x_goals_away": 1.31,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        }
+      }
     }
   ],
   "live_eval": {
     "schema": "betfree.digest_live_evaluation.v1",
-    "generated_at_utc": "2026-05-06T00:00:34.635904+00:00",
+    "generated_at_utc": "2026-05-06T01:27:50.319977+00:00",
     "db_path": "D:\\Betfree\\betfree.db",
     "historical_csv": "D:\\Betfree\\data\\open_datasets\\historical_robust.csv",
     "audit_rows": 12,
@@ -172,5 +544,7 @@
     "until_iso": "2026-05-05",
     "status": "no_data",
     "note": "Sin cruces audit↔CSV (¿digest nunca corrido o fechas/equipos distintos al CSV?)."
-  }
+  },
+  "historical_csv_hint": "historical_robust.csv",
+  "stats_note_es": "Goles (últ. N): medias desde el CSV histórico antes del día del partido. Corners y tarjetas: estimación heurística del modelo para ESTE enfrentamiento, no promedios reales por equipo en el CSV."
 }
