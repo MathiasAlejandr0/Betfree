@@ -3,102 +3,438 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="theme-color" content="#0c1222" />
+  <meta name="description" content="Pronósticos 1X2 Betfree — panel móvil" />
   <title>Betfree — Pronósticos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0f172a;
-      --card: #1e293b;
-      --muted: #94a3b8;
+      --ink: #0c1222;
+      --ink-mid: #151d32;
+      --surface: rgba(22, 30, 50, 0.72);
+      --card: rgba(28, 38, 62, 0.85);
+      --stroke: rgba(148, 163, 184, 0.18);
       --text: #f1f5f9;
-      --accent: #38bdf8;
-      --ok: #4ade80;
-      --warn: #fbbf24;
+      --muted: #94a3b8;
+      --accent: #34d399;
+      --accent-dim: rgba(52, 211, 153, 0.15);
+      --sky: #38bdf8;
+      --violet: #a78bfa;
+      --rose: #fb7185;
+      --amber: #fbbf24;
+      --danger: #f87171;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --shadow: 0 18px 50px -12px rgba(0, 0, 0, 0.55);
+      --font-display: "Outfit", system-ui, sans-serif;
+      --font-body: "Source Sans 3", system-ui, sans-serif;
     }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
     * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
       min-height: 100dvh;
-      padding: 12px 14px 28px;
-    }
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: linear-gradient(180deg, var(--bg) 70%, transparent);
-      padding-bottom: 8px;
-    }
-    h1 { font-size: 1.25rem; margin: 0 0 4px; font-weight: 700; }
-    .sub { font-size: 0.8rem; color: var(--muted); margin: 0 0 10px; }
-    .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
-    button {
-      background: var(--card);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.5;
       color: var(--text);
-      border: 1px solid #334155;
-      border-radius: 10px;
-      padding: 10px 14px;
-      font-size: 0.9rem;
-      cursor: pointer;
-      min-height: 44px;
+      background: var(--ink);
+      padding: max(12px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
     }
-    button:active { transform: scale(0.98); }
-    .badge {
-      font-size: 0.7rem;
-      padding: 3px 8px;
-      border-radius: 999px;
-      background: #334155;
-      color: var(--muted);
+
+    /* Fondo con profundidad (sin imágenes externas) */
+    .bg-layer {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(120% 80% at 50% -20%, rgba(52, 211, 153, 0.12), transparent 50%),
+        radial-gradient(80% 60% at 100% 20%, rgba(56, 189, 248, 0.08), transparent 45%),
+        radial-gradient(70% 50% at 0% 80%, rgba(167, 139, 250, 0.06), transparent 50%),
+        linear-gradient(165deg, #0c1222 0%, #111a30 40%, #0a0f1a 100%);
     }
-    .badge.ml { background: #164e63; color: #a5f3fc; }
-    .badge.warn { background: #713f12; color: #fde68a; }
-    ul { list-style: none; padding: 0; margin: 12px 0 0; }
-    li {
-      background: var(--card);
+    .bg-grid {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      opacity: 0.35;
+      background-image:
+        linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse 90% 70% at 50% 30%, black, transparent);
+    }
+
+    .shell {
+      max-width: 28rem;
+      margin: 0 auto;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      padding: 22px 20px 20px;
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--stroke);
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--sky), var(--violet));
+      opacity: 0.95;
+    }
+    .hero-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .mark {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
       border-radius: 14px;
-      padding: 14px 14px 12px;
-      margin-bottom: 10px;
-      border: 1px solid #334155;
+      background: linear-gradient(145deg, var(--accent-dim), rgba(56, 189, 248, 0.12));
+      border: 1px solid var(--stroke);
+      display: grid;
+      place-items: center;
     }
-    .teams { font-weight: 600; font-size: 1rem; margin-bottom: 8px; line-height: 1.35; }
-    .meta { font-size: 0.75rem; color: var(--muted); margin-bottom: 8px; }
+    .mark svg { width: 28px; height: 28px; }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(1.45rem, 5vw, 1.75rem);
+      letter-spacing: -0.02em;
+      margin: 0 0 4px;
+      line-height: 1.15;
+    }
+    .hero .tagline {
+      margin: 0;
+      font-size: 0.875rem;
+      color: var(--muted);
+      font-weight: 400;
+    }
+    .hero-meta {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    /* Botón principal */
+    .btn {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 18px;
+      min-height: 48px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--ink);
+      background: linear-gradient(135deg, #34d399, #2dd4bf);
+      box-shadow: 0 4px 20px rgba(52, 211, 153, 0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 8px 28px rgba(52, 211, 153, 0.45);
+    }
+    .btn:active { transform: translateY(0); }
+    .btn:focus-visible {
+      outline: 2px solid var(--sky);
+      outline-offset: 3px;
+    }
+    .btn svg { width: 18px; height: 18px; }
+
+    .pill {
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(51, 65, 85, 0.55);
+      color: var(--muted);
+      border: 1px solid var(--stroke);
+    }
+    .pill.ok { background: rgba(22, 101, 52, 0.35); color: #86efac; border-color: rgba(52, 211, 153, 0.25); }
+    .pill.warn { background: rgba(120, 53, 15, 0.4); color: #fde68a; border-color: rgba(251, 191, 36, 0.25); }
+
+    /* Lista */
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 8px 4px 10px;
+    }
+
+    ul.card-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    li.match-card {
+      position: relative;
+      border-radius: var(--radius-md);
+      padding: 16px 16px 14px;
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid var(--stroke);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      transition: transform 0.18s ease, border-color 0.18s ease;
+    }
+    li.match-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(148, 163, 184, 0.28);
+    }
+    li.match-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 12px;
+      bottom: 12px;
+      width: 3px;
+      border-radius: 3px;
+      background: var(--sky);
+      opacity: 0.85;
+    }
+    li.match-card[data-fav="home"]::before { background: linear-gradient(180deg, var(--sky), #0ea5e9); }
+    li.match-card[data-fav="draw"]::before { background: linear-gradient(180deg, #94a3b8, #64748b); }
+    li.match-card[data-fav="away"]::before { background: linear-gradient(180deg, var(--rose), #e11d48); }
+
+    .match-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
+      padding-left: 8px;
+    }
+    .teams {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.05rem;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+    .vs {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--muted);
+      margin-top: 4px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .chip-ml {
+      flex-shrink: 0;
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 5px 10px;
+      border-radius: 8px;
+      background: rgba(6, 78, 59, 0.45);
+      color: #5eead4;
+      border: 1px solid rgba(45, 212, 191, 0.25);
+    }
+    .chip-plain {
+      flex-shrink: 0;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--muted);
+      padding: 5px 10px;
+      border-radius: 8px;
+      border: 1px solid var(--stroke);
+      background: rgba(15, 23, 42, 0.35);
+    }
+
+    .meta {
+      font-size: 0.78rem;
+      color: var(--muted);
+      padding-left: 8px;
+      margin-bottom: 12px;
+    }
+
+    .fav-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-left: 8px;
+      margin-bottom: 12px;
+      font-size: 0.88rem;
+    }
+    .fav-row strong {
+      font-family: var(--font-display);
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .bar-wrap {
+      padding-left: 8px;
+    }
     .bar {
       display: flex;
-      height: 8px;
-      border-radius: 6px;
+      height: 10px;
+      border-radius: 999px;
       overflow: hidden;
-      margin-top: 6px;
+      background: rgba(15, 23, 42, 0.6);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.35);
     }
-    .bar span { height: 100%; }
-    .p1 { background: #0ea5e9; }
-    .p2 { background: #64748b; }
-    .p3 { background: #f472b6; }
-    .nums { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--muted); margin-top: 6px; }
-    .err { color: #f87171; font-size: 0.85rem; padding: 12px; background: #450a0a; border-radius: 10px; }
-    footer { margin-top: 20px; font-size: 0.72rem; color: var(--muted); text-align: center; }
-    a { color: var(--accent); }
+    .bar span {
+      height: 100%;
+      min-width: 4px;
+      transition: width 0.35s ease;
+    }
+    .bar .p1 { background: linear-gradient(90deg, #0ea5e9, #38bdf8); }
+    .bar .p2 { background: linear-gradient(90deg, #64748b, #94a3b8); }
+    .bar .p3 { background: linear-gradient(90deg, #fb7185, #f472b6); }
+
+    .nums {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 10px;
+      padding-left: 8px;
+      font-size: 0.78rem;
+      font-variant-numeric: tabular-nums;
+      color: var(--muted);
+    }
+    .nums span { flex: 1; text-align: center; }
+    .nums span:first-child { text-align: left; }
+    .nums span:last-child { text-align: right; }
+
+    .err {
+      border-radius: var(--radius-md);
+      padding: 16px;
+      background: rgba(69, 10, 10, 0.55);
+      border: 1px solid rgba(248, 113, 113, 0.25);
+      color: #fecaca;
+      font-size: 0.88rem;
+      line-height: 1.45;
+    }
+
+    .empty {
+      text-align: center;
+      padding: 36px 20px;
+      border-radius: var(--radius-lg);
+      border: 1px dashed var(--stroke);
+      background: rgba(15, 23, 42, 0.35);
+    }
+    .empty svg { width: 72px; height: 72px; margin-bottom: 14px; opacity: 0.85; }
+    .empty p { margin: 0; color: var(--muted); font-size: 0.9rem; max-width: 22rem; margin-inline: auto; }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--stroke);
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    footer a {
+      color: var(--sky);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover { text-decoration: underline; }
+    footer code {
+      font-size: 0.72em;
+      background: rgba(30, 41, 59, 0.8);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Betfree</h1>
-    <p class="sub" id="updated">Cargando…</p>
-    <div class="row">
-      <button type="button" id="btn-refresh">Actualizar</button>
-      <span class="badge" id="eval-badge" hidden></span>
-    </div>
-  </header>
-  <div id="msg"></div>
-  <ul id="list"></ul>
-  <footer>
-    Panel estático (GitHub Pages). Datos: <code>betfree_predictions.json</code>.
-    <br /><a href="./instalacion.html">Cómo publicar y actualizar desde tu PC</a>
-  </footer>
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <main class="shell">
+    <header class="hero">
+      <div class="hero-top">
+        <div class="mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M16 3L28 9v14L16 29 4 23V9L16 3z" stroke="url(#g1)" stroke-width="1.4" fill="rgba(52,211,153,0.08)"/>
+            <path d="M16 8v16M10 12h12M10 20h12" stroke="url(#g1)" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+            <defs>
+              <linearGradient id="g1" x1="4" y1="4" x2="28" y2="28">
+                <stop stop-color="#34d399"/><stop offset="1" stop-color="#38bdf8"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div>
+          <h1>Betfree</h1>
+          <p class="tagline">Pronósticos 1X2 · digest modelo</p>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <button type="button" class="btn" id="btn-refresh" aria-label="Actualizar datos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+            <path d="M4 12a8 8 0 0 1 8-8V2M20 12a8 8 0 0 1-8 8v2M20 12h2M4 12H2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Actualizar
+        </button>
+        <span class="pill" id="stamp">…</span>
+        <span class="pill" id="eval-badge" hidden></span>
+      </div>
+    </header>
+
+    <p class="section-title">Partidos</p>
+    <div id="msg"></div>
+    <ul id="list" class="card-list" role="list"></ul>
+
+    <footer>
+      Panel estático en GitHub Pages · fuente de datos <code>betfree_predictions.json</code>
+      <br /><a href="./instalacion.html">Cómo publicar y actualizar</a>
+    </footer>
+  </main>
+
   <script>
     function pct(x) { return (100 * Number(x)).toFixed(1) + "%"; }
-    function fav(ph, pd, pa) {
+    function favKey(ph, pd, pa) {
+      const m = Math.max(ph, pd, pa);
+      if (m === ph) return "home";
+      if (m === pa) return "away";
+      return "draw";
+    }
+    function favLabel(ph, pd, pa) {
       const m = Math.max(ph, pd, pa);
       if (m === ph) return "Local";
       if (m === pa) return "Visita";
@@ -113,53 +449,81 @@
     function render(data) {
       document.getElementById("msg").innerHTML = "";
       const gen = data.generated_at_utc || "—";
-      document.getElementById("updated").textContent =
-        "Actualizado (UTC): " + gen + " · " + (data.items ? data.items.length : 0) + " partidos";
+      const n = data.items ? data.items.length : 0;
+      document.getElementById("stamp").textContent =
+        n + " partido" + (n !== 1 ? "s" : "") + " · " + gen.slice(0, 19).replace("T", " ");
+
       const ev = data.live_eval;
       const eb = document.getElementById("eval-badge");
       if (ev && ev.metrics && typeof ev.metrics.multiclass_log_loss === "number") {
         eb.hidden = false;
         eb.textContent =
-          "Eval. vivo LL " + ev.metrics.multiclass_log_loss.toFixed(3) + " (" + (ev.status || "?") + ")";
-        eb.className = "badge " + (ev.status === "breach" ? "warn" : "ml");
+          "Eval LL " + ev.metrics.multiclass_log_loss.toFixed(3) + " · " + (ev.status || "—");
+        eb.className = "pill " + (ev.status === "breach" ? "warn" : "ok");
       } else {
         eb.hidden = true;
       }
+
       const ul = document.getElementById("list");
       ul.innerHTML = "";
+
       if (data.note && (!data.items || !data.items.length)) {
         document.getElementById("msg").innerHTML =
-          '<p class="err">' + String(data.note) + "</p>";
+          '<div class="empty" role="status">' +
+          '<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
+          '<circle cx="40" cy="40" r="28" stroke="url(#ge)" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6"/>' +
+          '<path d="M40 22v36M22 40h36" stroke="#64748b" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>' +
+          '<circle cx="40" cy="40" r="6" fill="rgba(52,211,153,0.25)" stroke="#34d399" stroke-width="1.2"/>' +
+          '<defs><linearGradient id="ge" x1="12" y1="12" x2="68" y2="68"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#34d399"/></linearGradient></defs></svg>' +
+          "<p>" + escapeHtml(String(data.note)) + "</p></div>";
+        return;
       }
+
+      if (!n) {
+        document.getElementById("msg").innerHTML =
+          '<div class="empty" role="status">' +
+          '<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="40" cy="40" r="30" stroke="#334155" stroke-width="1.2" fill="rgba(30,41,59,0.4)"/>' +
+          '<path d="M28 40h24M40 28v24" stroke="#64748b" stroke-width="1.5" stroke-linecap="round"/></svg>' +
+          "<p>No hay partidos en el JSON. Ejecutá el digest y <code>scripts/export_pages_predictions.py</code> en tu PC.</p></div>";
+        return;
+      }
+
       (data.items || []).forEach(function (it) {
         const ph = Number(it.p_home), pd = Number(it.p_draw), pa = Number(it.p_away);
+        const fk = favKey(ph, pd, pa);
         const li = document.createElement("li");
+        li.className = "match-card";
+        li.setAttribute("data-fav", fk);
+        li.setAttribute("role", "listitem");
+        const mlChip = it.used_ml ? '<span class="chip-ml">ML</span>' : '<span class="chip-plain">Poisson</span>';
         li.innerHTML =
-          '<div class="teams">' +
+          '<div class="match-head"><div><div class="teams">' +
           escapeHtml(it.home_team) +
-          " · " +
+          '<span class="vs">vs</span>' +
           escapeHtml(it.away_team) +
+          "</div></div>" +
+          mlChip +
           "</div>" +
           '<div class="meta">' +
           escapeHtml(it.local_date_iso || "") +
           (it.slug ? " · " + escapeHtml(it.slug) : "") +
-          (it.used_ml ? ' <span class="badge ml">1X2 ML/mezcla</span>' : "") +
           "</div>" +
-          "<div>Favorito modelo: <strong>" +
-          fav(ph, pd, pa) +
+          '<div class="fav-row">Favorito modelo: <strong>' +
+          favLabel(ph, pd, pa) +
           "</strong></div>" +
-          '<div class="bar"><span class="p1" style="width:' +
+          '<div class="bar-wrap"><div class="bar" role="img" aria-label="Probabilidades 1X2">' +
+          '<span class="p1" style="width:' +
           (ph * 100).toFixed(2) +
           '%"></span><span class="p2" style="width:' +
           (pd * 100).toFixed(2) +
           '%"></span><span class="p3" style="width:' +
           (pa * 100).toFixed(2) +
-          '%"></span></div>' +
-          '<div class="nums"><span>Loc ' +
+          '%"></span></div></div>' +
+          '<div class="nums"><span>Local ' +
           pct(ph) +
-          "</span><span>Emp " +
+          "</span><span>Empate " +
           pct(pd) +
-          "</span><span>Vis " +
+          "</span><span>Visita " +
           pct(pa) +
           "</span></div>";
         ul.appendChild(li);
@@ -173,13 +537,14 @@
         .replace(/"/g, "&quot;");
     }
     async function refresh() {
+      document.getElementById("stamp").textContent = "Cargando…";
       try {
         const data = await loadData();
         render(data);
       } catch (e) {
         document.getElementById("msg").innerHTML =
-          '<p class="err">No se pudo cargar betfree_predictions.json. ¿Publicaste la carpeta docs/?</p>';
-        document.getElementById("updated").textContent = "Error de red";
+          '<p class="err" role="alert">No se pudo cargar <code>betfree_predictions.json</code>. Comprobá que GitHub Pages sirva la carpeta <code>docs/</code> y que el archivo exista en el repo.</p>';
+        document.getElementById("stamp").textContent = "Error";
       }
     }
     document.getElementById("btn-refresh").addEventListener("click", refresh);

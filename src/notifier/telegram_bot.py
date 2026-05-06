@@ -1,69 +1,73 @@
-"""Telegram alert sender for betting opportunities."""
+"""Telegram digest HTML y menús con botones inline."""
 
 from __future__ import annotations
 
-from dataclasses import dataclass
-import logging
+from typing import Any
 
 from telegram import Bot
-from telegram.error import TelegramError
 
-from src.config import Settings, get_settings
-
-
-LOGGER = logging.getLogger(__name__)
-
-
-@dataclass(frozen=True)
-class BetAlert:
-    """Serializable alert object."""
-
-    match_name: str
-    suggested_market: str
-    probability: float
-    odds: float
-    stake: float
+from src.config import Settings, get_settings, repo_root
 
 
 class TelegramNotifier:
-    """Telegram bot notifier."""
-
     def __init__(self, settings: Settings) -> None:
-        if not settings.telegram_bot_token:
-            raise RuntimeError("TELEGRAM_BOT_TOKEN is not configured.")
-        if not settings.telegram_chat_id:
-            raise RuntimeError("TELEGRAM_CHAT_ID is not configured.")
+        tok = settings.telegram_bot_token.strip()
+        cid = settings.telegram_chat_id.strip()
+        if not tok:
+            raise RuntimeError(f"TELEGRAM_BOT_TOKEN vacío → {repo_root() / '.env'}")
+        if not cid:
+            raise RuntimeError(f"TELEGRAM_CHAT_ID vacío → {repo_root() / '.env'}")
         self._settings = settings
-        self._bot = Bot(token=settings.telegram_bot_token)
+        self._bot = Bot(token=tok)
 
-    def format_alert_message(self, alert: BetAlert) -> str:
-        """Build markdown message for Telegram."""
-        return (
-            "🚨 *Alerta de Value Bet*\n\n"
-            f"⚽ *Partido:* {alert.match_name}\n"
-            f"🎯 *Mercado sugerido:* {alert.suggested_market}\n"
-            f"📊 *Probabilidad modelo:* {alert.probability * 100:.2f}%\n"
-            f"💸 *Cuota:* {alert.odds:.2f}\n"
-            f"🏦 *Stake recomendado:* {alert.stake:.2f} u"
+    def _chat_target(self, chat_id: str | None) -> str:
+        return (chat_id or self._settings.telegram_chat_id).strip()
+
+    @staticmethod
+    def escape_html(text: str) -> str:
+        return str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    async def send_html(self, text: str, *, chat_id: str | None = None) -> None:
+        cid = self._chat_target(chat_id)
+        await self._bot.send_message(
+            chat_id=cid,
+            text=text,
+            parse_mode="HTML",
+            disable_web_page_preview=True,
         )
 
-    async def send_alert(self, alert: BetAlert) -> str:
-        """Send alert and return message body."""
-        message = self.format_alert_message(alert)
-        try:
-            await self._bot.send_message(
-                chat_id=self._settings.telegram_chat_id,
-                text=message,
-                parse_mode="Markdown",
-                disable_web_page_preview=True,
-            )
-        except TelegramError as exc:
-            LOGGER.error("Telegram send failure: %s", exc)
-            raise
-        return message
+    async def send_digest_hub(self, text: str, reply_markup: Any, *, chat_id: str | None = None) -> None:
+        cid = self._chat_target(chat_id)
+        await self._bot.send_message(
+            chat_id=cid,
+            text=text,
+            parse_mode="HTML",
+            reply_markup=reply_markup,
+            disable_web_page_preview=True,
+        )
+
+    async def send_chunked_parts(
+        self,
+        header: str,
+        blocks: list[str],
+        *,
+        continuation_header: str | None = None,
+        max_len: int = 3800,
+        chat_id: str | None = None,
+    ) -> None:
+        follow = continuation_header or header
+        chunk = header.rstrip() + "\n\n"
+        n = len(blocks)
+        for i, block in enumerate(blocks):
+            suf = "\n\n" if i < n - 1 else ""
+            extra = block + suf
+            if len(chunk) + len(extra) > max_len and chunk.strip():
+                await self.send_html(chunk.rstrip(), chat_id=chat_id)
+                chunk = follow.rstrip() + "\n\n"
+            chunk += extra
+        if chunk.strip():
+            await self.send_html(chunk.rstrip(), chat_id=chat_id)
 
 
 def build_default_notifier() -> TelegramNotifier:
-    """Build notifier from environment settings."""
     return TelegramNotifier(settings=get_settings())
-

@@ -22,5 +22,13 @@
     <li>Tras 1–2 minutos, abrí en el teléfono: <code>https://&lt;usuario&gt;.github.io/&lt;repositorio&gt;/</code> (ej. <code>MathiasAlejandr0.github.io/Betfree/</code>).</li>
   </ol>
   <p><strong>Sobre <code>appbetfree.html</code> (raíz del repo):</strong> no es esta vista. Es un documento tipo “export de código” del proyecto <em>ProBet</em> (Next.js). El panel del modelo Betfree es <a href="./index.html">index.html</a> + <code>betfree_predictions.json</code>.</p>
+
+  <h2>Automático al encender el PC (Windows)</h2>
+  <ol>
+    <li>Configurá Git una vez: <code>git config --global user.name "Tu Nombre"</code> y <code>git config --global user.email tu@mail</code>.</li>
+    <li>Hacé un <code>git push</code> manual exitoso (para que Windows guarde credenciales).</li>
+    <li>En el repo, ejecutá: <code>scripts\windows\instalar_betfree_al_encender.bat</code></li>
+  </ol>
+  <p>Eso registra la tarea <strong>Betfree al encender PC</strong>: espera ~60 s, envía el digest por Telegram, exporta el JSON y hace <code>git push</code> si cambió la web. Logs en <code>data/logs/betfree_startup.log</code>. Probar sin subir a Git: <code>powershell -ExecutionPolicy Bypass -File scripts\windows\betfree_al_inicio.ps1 -SkipGitPush</code></p>
 </body>
 </html>

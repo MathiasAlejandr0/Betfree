@@ -71,3 +71,13 @@ git commit -m "chore: actualizar predicciones para Pages" && git push
 En GitHub: **Settings → Pages → Branch `main` / folder `/docs`**. La URL será `https://<usuario>.github.io/<repo>/` (respetá mayúsculas del nombre del repo si GitHub las muestra).
 
 **Nota:** `appbetfree.html` en la raíz es documentación exportada del proyecto **ProBet** (Next.js), no el panel Betfree; el panel del modelo es `docs/index.html`. Instrucciones detalladas: [docs/instalacion.html](docs/instalacion.html).
+
+### Automático al encender Windows (Telegram + GitHub Pages)
+
+Tras configurar `git user.name` / `user.email` y un `git push` manual con credenciales guardadas:
+
+```text
+scripts\windows\instalar_betfree_al_encender.bat
+```
+
+Registra la tarea **Betfree al encender PC**: ~60 s de espera → `free_digest_app --run-once` (Telegram) → export del JSON → `git push` si hay cambios. Logs: `data/logs/betfree_startup.log`. Si ya usás la tarea diaria a fija hora, podés recibir el digest dos veces; desinstalá una si no querés duplicado (`scripts\windows\desinstalar_betfree_autostart_completo.ps1` quita ambas tareas programadas).

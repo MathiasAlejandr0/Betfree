@@ -1,5 +1,9 @@
 requests>=2.32.0
+python-dotenv>=1.0.1
+pandas>=2.1.0
+numpy>=1.26.0
 APScheduler>=3.10.4
 python-telegram-bot>=21.0
 scikit-learn>=1.5.0
 xgboost>=2.1.0
+pytest>=8.0.0
