@@ -44,7 +44,8 @@ def main() -> None:
             "Goles (últ. N): medias desde el CSV histórico antes del día del partido. "
             "Corners y tarjetas: estimación heurística del modelo para ESTE enfrentamiento, "
             "no promedios reales por equipo en el CSV. "
-            "ClubElo (opcional): rating público europeo desde api.clubelo.com por nombre+Liga cuando hay RED al export."
+            "ClubElo (opcional): rating público europeo desde api.clubelo.com por nombre+Liga cuando hay RED al export. "
+            "H2H: últimos cruces entre los dos equipos en el CSV histórico (filtrado por competición si el slug mapea a liga)."
         ),
     }
 
@@ -93,13 +94,22 @@ def main() -> None:
             clubelo_country_hint_for_digest_slug,
             load_club_elo_ranking,
         )
+        from src.predictor.digest_hist_league_map import hist_competition_for_digest_slug
         from src.predictor.digest_roll_context import DigestRollContext
         from src.predictor.pages_export_team_stats import build_pages_team_stats_from_context
+        from src.predictor.pages_h2h_history import PagesH2HIndex
 
         audit_rows = cur.fetchall()
         ctx_by_day: dict[date, DigestRollContext] = {}
         elo_cache_root = ROOT / "data" / "cache" / "club_elo"
         elo_cache: dict[date, ClubEloRanking | None] = {}
+
+        h2h_idx: PagesH2HIndex | None = None
+        if hist_ok:
+            try:
+                h2h_idx = PagesH2HIndex(str(Path(hist_csv).resolve()))
+            except (OSError, ValueError):
+                h2h_idx = None
 
         def roll_ctx_for(day_iso: str) -> DigestRollContext | None:
             if not hist_ok:
@@ -131,6 +141,19 @@ def main() -> None:
             roller = roll_ctx_for(row_date)
             ce = club_elo_for(row_date)
             cc = clubelo_country_hint_for_digest_slug(row_slug)
+            h2h_block = None
+            if h2h_idx is not None:
+                try:
+                    dk_h2h = date.fromisoformat(row_date.strip())
+                    h2h_block = h2h_idx.summarize(
+                        dk_h2h,
+                        row_home,
+                        row_away,
+                        hist_competition_for_digest_slug(row_slug),
+                        max_meetings=6,
+                    )
+                except ValueError:
+                    h2h_block = None
             stats = (
                 build_pages_team_stats_from_context(
                     roller,
@@ -140,6 +163,7 @@ def main() -> None:
                     recent_matches=5,
                     club_elo_ranking=ce,
                     club_elo_country_hint=cc,
+                    head_to_head=h2h_block,
                 )
                 if roller is not None
                 else None

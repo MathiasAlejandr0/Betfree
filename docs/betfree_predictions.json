@@ -1,6 +1,6 @@
 {
   "schema": "betfree.pages_predictions.v2",
-  "generated_at_utc": "2026-05-06T01:53:44.335225+00:00",
+  "generated_at_utc": "2026-05-06T02:31:42.953362+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
@@ -64,6 +64,19 @@
             "country": null,
             "match": "none"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
@@ -128,6 +141,19 @@
             "country": null,
             "match": "none"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
@@ -192,6 +218,19 @@
             "country": null,
             "match": "none"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
@@ -256,6 +295,19 @@
             "country": null,
             "match": "none"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
@@ -320,6 +372,19 @@
             "country": null,
             "match": "none"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
@@ -384,6 +449,19 @@
             "country": "ESP",
             "match": "fuzzy"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
@@ -448,6 +526,19 @@
             "country": null,
             "match": "none"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
@@ -512,6 +603,19 @@
             "country": null,
             "match": "none"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
@@ -576,6 +680,19 @@
             "country": null,
             "match": "none"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
@@ -640,6 +757,19 @@
             "country": null,
             "match": "none"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
@@ -704,6 +834,19 @@
             "country": null,
             "match": "none"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
@@ -768,6 +911,19 @@
             "country": null,
             "match": "none"
           }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     }
@@ -786,5 +942,5 @@
     "note": "Sin cruces audit↔CSV (¿digest nunca corrido o fechas/equipos distintos al CSV?)."
   },
   "historical_csv_hint": "historical_robust.csv",
-  "stats_note_es": "Goles (últ. N): medias desde el CSV histórico antes del día del partido. Corners y tarjetas: estimación heurística del modelo para ESTE enfrentamiento, no promedios reales por equipo en el CSV. ClubElo (opcional): rating público europeo desde api.clubelo.com por nombre+Liga cuando hay RED al export."
+  "stats_note_es": "Goles (últ. N): medias desde el CSV histórico antes del día del partido. Corners y tarjetas: estimación heurística del modelo para ESTE enfrentamiento, no promedios reales por equipo en el CSV. ClubElo (opcional): rating público europeo desde api.clubelo.com por nombre+Liga cuando hay RED al export. H2H: últimos cruces entre los dos equipos en el CSV histórico (filtrado por competición si el slug mapea a liga)."
 }

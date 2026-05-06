@@ -474,6 +474,10 @@
       border-color: rgba(167, 139, 250, 0.35);
       color: #ddd6fe;
     }
+    .micro-pill.h2h {
+      border-color: rgba(251, 191, 36, 0.35);
+      color: #fcd34d;
+    }
 
     .slug-pill-inline {
       display: inline-block;
@@ -854,6 +858,33 @@
       opacity: 0.75;
       font-size: 0.68rem;
     }
+
+    .stats-h2h-block {
+      border-radius: var(--radius-md);
+      padding: 12px 12px 10px;
+      margin-bottom: 12px;
+      background: rgba(120, 53, 15, 0.12);
+      border: 1px solid rgba(251, 191, 36, 0.28);
+    }
+    .stats-h2h-block h4 {
+      margin: 0 0 8px;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--amber);
+    }
+    .stats-h2h-list {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      font-size: 0.74rem;
+      color: rgba(226, 232, 240, 0.9);
+      line-height: 1.45;
+    }
+    .stats-h2h-list li {
+      margin-bottom: 4px;
+    }
   </style>
 </head>
 <body>
@@ -1167,6 +1198,21 @@
           );
         }
       }
+      var h2h = ts.h2h;
+      if (h2h && Number(h2h.meetings) > 0 && h2h.record_wdl_home) {
+        var rw = h2h.record_wdl_home;
+        parts.push(
+          '<span class="micro-pill h2h" title="' +
+            escapeHtml(h2h.note_es || "Enfrentamientos directos en el histórico") +
+            '">H2H ' +
+            rw.w +
+            "-" +
+            rw.d +
+            "-" +
+            rw.l +
+            "</span>"
+        );
+      }
       return parts.length
         ? '<div class="micro-stats">' + parts.join("") + "</div>"
         : "";
@@ -1210,6 +1256,58 @@
         sideRow("Visita", ce.away) +
         "</div></div>"
       );
+    }
+
+    function buildH2hHtml(h2h) {
+      if (!h2h || !h2h.schema) return "";
+      var n = Number(h2h.meetings) || 0;
+      if (n < 1) {
+        return (
+          '<div class="stats-h2h-block"><h4>Enfrentamientos directos (H2H)</h4><p class="stats-model-note">' +
+          escapeHtml(h2h.note_es || "Sin datos H2H.") +
+          "</p></div>"
+        );
+      }
+      var rec = h2h.record_wdl_home || { w: 0, d: 0, l: 0 };
+      var filt = h2h.competition_filter ? escapeHtml(String(h2h.competition_filter)) : "todas las comp. en CSV";
+      var head =
+        '<div class="stats-h2h-block"><h4>Enfrentamientos directos (H2H)</h4><p class="stats-model-note">' +
+        escapeHtml(h2h.note_es || "") +
+        '</p><div class="stat-row"><span>Registro · local próximo · W-D-L</span><span>' +
+        rec.w +
+        "-" +
+        rec.d +
+        "-" +
+        rec.l +
+        " · " +
+        n +
+        " partido(s)</span></div>" +
+        '<div class="stat-row"><span>Media goles/partido</span><span>' +
+        (h2h.avg_total_goals != null ? Number(h2h.avg_total_goals).toFixed(2) : "—") +
+        "</span></div>" +
+        '<div class="stat-row"><span>Filtro competición</span><span>' +
+        filt +
+        "</span></div>";
+      var list = "";
+      if (Array.isArray(h2h.recent) && h2h.recent.length > 0) {
+        list = "<ul class=\"stats-h2h-list\">";
+        h2h.recent.forEach(function (ev) {
+          var o = ev.outcome_for_upcoming_home || "?";
+          var lbl = o === "W" ? "ganó local" : o === "L" ? "ganó visita" : "empate";
+          list +=
+            "<li>" +
+            escapeHtml(String(ev.date_iso || "")) +
+            " · " +
+            escapeHtml(ev.goals_home != null ? String(ev.goals_home) : "") +
+            "-" +
+            escapeHtml(ev.goals_away != null ? String(ev.goals_away) : "") +
+            " · " +
+            escapeHtml(lbl) +
+            "</li>";
+        });
+        list += "</ul>";
+      }
+      return head + list + "</div>";
     }
 
     async function loadData() {
@@ -1312,6 +1410,7 @@
         '<div class="stats-grid-2">' +
         grid +
         "</div>" +
+        buildH2hHtml(ts ? ts.h2h : null) +
         model
       );
     }

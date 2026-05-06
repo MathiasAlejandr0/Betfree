@@ -49,6 +49,7 @@ def build_pages_team_stats_from_context(
     recent_matches: int = 5,
     club_elo_ranking: ClubEloRanking | None = None,
     club_elo_country_hint: str | None = None,
+    head_to_head: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Calcula estadísticas con un DigestRollContext ya construido (p. ej. cacheado por día)."""
     hist = hist_competition_for_digest_slug(digest_slug)
@@ -105,6 +106,9 @@ def build_pages_team_stats_from_context(
             "away": _club_elo_side_block(ra),
         }
 
+    if head_to_head is not None:
+        out["h2h"] = head_to_head
+
     return out
 
 
@@ -137,5 +141,6 @@ def build_pages_team_stats(
         recent_matches=recent_matches,
         club_elo_ranking=None,
         club_elo_country_hint=None,
+        head_to_head=None,
     )
 
