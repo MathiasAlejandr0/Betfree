@@ -3,5 +3,7 @@
 __pycache__/
 *.pyc
 betfree.db
+# Generado por scripts/ci_prepare_historical_merge.py (local / CI)
+data/open_datasets/historical_robust_ci.csv
 .pytest_cache/
 .mypy_cache/

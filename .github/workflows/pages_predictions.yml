@@ -1,0 +1,63 @@
+# Regenera docs/betfree_predictions.json desde digest ESPN/TSDB + export (ClubElo + H2H).
+# Requiere permiso de escritura en el repo (Settings → Actions → Workflow permissions → read and write).
+
+name: pages-predictions
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Lunes y jueves 13:00 UTC (morning-ish EU)
+    - cron: "0 13 * * 1,4"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-predictions-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  refresh-json:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Historical CSV para Poisson+H2H (E0 + SP1, FD Co UK)
+        run: python scripts/ci_prepare_historical_merge.py
+
+      - name: Digest SQLite (sin Telegram)
+        env:
+          BETFREE_DIGEST_SKIP_TELEGRAM: "1"
+          DIGEST_USE_E0_ML: "false"
+          HISTORICAL_CSV_PATH: data/open_datasets/historical_robust_ci.csv
+          SQLITE_DB_PATH: betfree.db
+          DIGEST_RUN_LIVE_EVAL_AFTER_DIGEST: "false"
+        run: python -m src.free_digest_app --run-once
+
+      - name: Export GitHub Pages JSON
+        env:
+          EXPORT_PAGES_SKIP_CLUBELO: "false"
+          HISTORICAL_CSV_PATH: data/open_datasets/historical_robust_ci.csv
+          SQLITE_DB_PATH: betfree.db
+        run: python scripts/export_pages_predictions.py
+
+      - name: Commit docs/betfree_predictions.json si hubo cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/betfree_predictions.json
+          if git diff --staged --quiet; then
+            echo "Sin cambios (mismo contenido)."
+          else
+            git commit -m "chore(ci): actualizar betfree_predictions.json"
+            git push
+          fi
