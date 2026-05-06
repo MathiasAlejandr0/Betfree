@@ -63,6 +63,18 @@ class GlobalCsvRollState:
     def elo(self, name: str) -> float:
         return float(self._t[norm_team(name)].elo)
 
+    def avg_goals_recent(self, team: str, window: int) -> tuple[float | None, float | None, int]:
+        """Promedios de goles marcados y encajados en los últimos `window` partidos (o menos si hay menos datos). Sin datos → None, 0."""
+        key = norm_team(team)
+        snap = self._t.get(key)
+        if snap is None or not snap.hist:
+            return None, None, 0
+        rows = snap.hist[-window:]
+        n = len(rows)
+        gf = sum(r[0] for r in rows) / n
+        ga = sum(r[1] for r in rows) / n
+        return float(gf), float(ga), int(n)
+
     def poisson_probs(self, home: str, away: str) -> tuple[float, float, float, float, float]:
         mu = self.league_mu()
         h = max(mu / 2.0, 0.62)

@@ -11,7 +11,7 @@ from __future__ import annotations
 import json
 import sqlite3
 import sys
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,16 +25,25 @@ def main() -> None:
 
     bootstrap_dotenv()
     settings = get_settings()
+    hist_csv = settings.historical_csv_path
+    if hist_csv and not Path(hist_csv).is_absolute():
+        hist_csv = str((ROOT / hist_csv).resolve())
     db_path = settings.sqlite_db_path
     if not Path(db_path).is_absolute():
         db_path = str((ROOT / db_path).resolve())
 
     payload: dict = {
-        "schema": "betfree.pages_predictions.v1",
+        "schema": "betfree.pages_predictions.v2",
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "db_path_hint": Path(db_path).name,
         "items": [],
         "live_eval": None,
+        "historical_csv_hint": None,
+        "stats_note_es": (
+            "Goles (últ. N): medias desde el CSV histórico antes del día del partido. "
+            "Corners y tarjetas: estimación heurística del modelo para ESTE enfrentamiento, "
+            "no promedios reales por equipo en el CSV."
+        ),
     }
 
     ev_path = ROOT / "data" / "digest_live_evaluation.json"
@@ -43,6 +52,8 @@ def main() -> None:
             payload["live_eval"] = json.loads(ev_path.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError):
             payload["live_eval"] = {"error": "no se pudo leer digest_live_evaluation.json"}
+
+    payload["historical_csv_hint"] = Path(hist_csv).name if hist_csv else None
 
     if not Path(db_path).is_file():
         payload["note"] = "Sin base SQLite: generá predicciones con el digest y volvé a ejecutar este script."
@@ -53,6 +64,8 @@ def main() -> None:
 
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
+    hist_ok = bool(hist_csv and Path(hist_csv).is_file())
+
     try:
         cur = conn.execute(
             """
@@ -68,20 +81,54 @@ def main() -> None:
             LIMIT 120
             """
         )
-        for r in cur.fetchall():
+        from src.predictor.digest_roll_context import DigestRollContext
+        from src.predictor.pages_export_team_stats import build_pages_team_stats_from_context
+
+        audit_rows = cur.fetchall()
+        ctx_by_day: dict[date, DigestRollContext] = {}
+
+        def roll_ctx_for(day_iso: str) -> DigestRollContext | None:
+            if not hist_ok:
+                return None
+            try:
+                d_key = date.fromisoformat(day_iso.strip())
+            except ValueError:
+                return None
+            if d_key not in ctx_by_day:
+                ctx_by_day[d_key] = DigestRollContext.from_csv(str(Path(hist_csv).resolve()), before_day=d_key)
+            return ctx_by_day[d_key]
+
+        for r in audit_rows:
+            row_home = str(r["home_team"])
+            row_away = str(r["away_team"])
+            row_slug = str(r["digest_slug"] or "")
+            row_date = str(r["local_date_iso"])
+            roller = roll_ctx_for(row_date)
+            stats = (
+                build_pages_team_stats_from_context(
+                    roller,
+                    digest_slug=row_slug,
+                    home_team=row_home,
+                    away_team=row_away,
+                    recent_matches=5,
+                )
+                if roller is not None
+                else None
+            )
             payload["items"].append(
                 {
                     "event_id": int(r["event_id"]),
-                    "local_date_iso": str(r["local_date_iso"]),
-                    "slug": str(r["digest_slug"] or ""),
-                    "home_team": str(r["home_team"]),
-                    "away_team": str(r["away_team"]),
+                    "local_date_iso": row_date,
+                    "slug": row_slug,
+                    "home_team": row_home,
+                    "away_team": row_away,
                     "p_home": round(float(r["ph"]), 4),
                     "p_draw": round(float(r["pd"]), 4),
                     "p_away": round(float(r["pa"]), 4),
                     "used_ml": bool(int(r["used_ml"])),
                     "blend_ml_w": round(float(r["blend_ml_w"]), 3),
                     "ts_utc": str(r["ts_utc"]),
+                    "team_stats": stats,
                 }
             )
     finally:

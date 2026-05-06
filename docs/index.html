@@ -41,7 +41,7 @@
     }
 
     * { box-sizing: border-box; }
-    html { -webkit-text-size-adjust: 100%; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -54,7 +54,6 @@
       padding: max(12px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
     }
 
-    /* Fondo con profundidad (sin imágenes externas) */
     .bg-layer {
       position: fixed;
       inset: 0;
@@ -78,11 +77,10 @@
     }
 
     .shell {
-      max-width: 28rem;
+      max-width: 26rem;
       margin: 0 auto;
     }
 
-    /* Hero */
     .hero {
       position: relative;
       padding: 22px 20px 20px;
@@ -92,7 +90,7 @@
       -webkit-backdrop-filter: blur(16px);
       border: 1px solid var(--stroke);
       box-shadow: var(--shadow);
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       overflow: hidden;
     }
     .hero::before {
@@ -143,7 +141,6 @@
       align-items: center;
     }
 
-    /* Botón principal */
     .btn {
       font-family: var(--font-display);
       font-weight: 600;
@@ -170,6 +167,27 @@
       outline: 2px solid var(--sky);
       outline-offset: 3px;
     }
+    .btn-outline {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.8rem;
+      border-radius: 10px;
+      padding: 8px 12px;
+      min-height: 40px;
+      cursor: pointer;
+      color: var(--text);
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid var(--stroke);
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .btn-outline:hover {
+      border-color: rgba(148, 163, 184, 0.35);
+      background: rgba(51, 65, 85, 0.4);
+    }
+    .btn-outline:focus-visible {
+      outline: 2px solid var(--sky);
+      outline-offset: 2px;
+    }
     .btn svg { width: 18px; height: 18px; }
 
     .pill {
@@ -187,7 +205,14 @@
     .pill.ok { background: rgba(22, 101, 52, 0.35); color: #86efac; border-color: rgba(52, 211, 153, 0.25); }
     .pill.warn { background: rgba(120, 53, 15, 0.4); color: #fde68a; border-color: rgba(251, 191, 36, 0.25); }
 
-    /* Lista */
+    /* Filtros */
+    .section-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 4px 0 8px;
+    }
     .section-title {
       font-family: var(--font-display);
       font-size: 0.7rem;
@@ -195,8 +220,91 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--muted);
-      margin: 8px 4px 10px;
+      margin: 0;
     }
+
+    .filters-panel {
+      border-radius: var(--radius-lg);
+      background: rgba(21, 29, 50, 0.55);
+      border: 1px solid var(--stroke);
+      padding: 12px 12px 10px;
+      margin-bottom: 14px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .filters-panel[hidden] { display: none !important; }
+    .filters-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .filters-row:last-child { margin-bottom: 0; }
+    .filter-search {
+      flex: 1;
+      min-width: 140px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--stroke);
+      background: rgba(15, 23, 42, 0.55);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.88rem;
+    }
+    .filter-search::placeholder { color: var(--muted); opacity: 0.85; }
+    .filter-search:focus-visible {
+      outline: 2px solid var(--sky);
+      outline-offset: 1px;
+    }
+    .filter-select {
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--stroke);
+      background: rgba(15, 23, 42, 0.55);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      min-width: 7.5rem;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+    .filter-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      width: 100%;
+    }
+    .chk-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      color: var(--muted);
+      user-select: none;
+    }
+    .chk-wrap input { accent-color: var(--accent); width: 1rem; height: 1rem; }
+    .filters-count {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .fixture-board .day-heading {
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(226, 232, 240, 0.88);
+      margin: 0 0 8px 6px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+    }
+    .day-block + .day-block { margin-top: 22px; }
 
     ul.card-list {
       list-style: none;
@@ -204,34 +312,42 @@
       margin: 0;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 11px;
     }
 
     li.match-card {
       position: relative;
       border-radius: var(--radius-md);
-      padding: 16px 16px 14px;
+      padding: 14px 14px 12px;
       background: var(--card);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       border: 1px solid var(--stroke);
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-      transition: transform 0.18s ease, border-color 0.18s ease;
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+      list-style: none;
     }
     li.match-card:hover {
       transform: translateY(-2px);
       border-color: rgba(148, 163, 184, 0.28);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
     }
+    li.match-card:focus-visible {
+      outline: 2px solid var(--sky);
+      outline-offset: 3px;
+    }
+    li.match-card:active { transform: translateY(0); }
     li.match-card::before {
       content: "";
       position: absolute;
       left: 0;
-      top: 12px;
-      bottom: 12px;
+      top: 10px;
+      bottom: 10px;
       width: 3px;
       border-radius: 3px;
       background: var(--sky);
-      opacity: 0.85;
+      opacity: 0.95;
     }
     li.match-card[data-fav="home"]::before { background: linear-gradient(180deg, var(--sky), #0ea5e9); }
     li.match-card[data-fav="draw"]::before { background: linear-gradient(180deg, #94a3b8, #64748b); }
@@ -242,53 +358,126 @@
       justify-content: space-between;
       align-items: flex-start;
       gap: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       padding-left: 8px;
+    }
+    .badge-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
     }
     .teams {
       font-family: var(--font-display);
       font-weight: 600;
-      font-size: 1.05rem;
-      line-height: 1.35;
+      font-size: clamp(1rem, 3.8vw, 1.06rem);
+      line-height: 1.38;
       letter-spacing: -0.01em;
     }
     .vs {
       display: block;
-      font-size: 0.7rem;
-      font-weight: 500;
-      color: var(--muted);
-      margin-top: 4px;
-      letter-spacing: 0.08em;
+      font-size: 0.62rem;
+      font-weight: 600;
+      color: rgba(148, 163, 184, 0.9);
+      margin-top: 3px;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
     }
-    .chip-ml {
-      flex-shrink: 0;
-      font-size: 0.65rem;
+
+    .conf-badge {
+      font-family: var(--font-display);
+      font-size: 0.61rem;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
-      padding: 5px 10px;
-      border-radius: 8px;
-      background: rgba(6, 78, 59, 0.45);
+      letter-spacing: 0.07em;
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+    .conf-badge.conf-strong {
+      background: rgba(52, 211, 153, 0.12);
+      color: #a7f3d0;
+      border-color: rgba(52, 211, 153, 0.35);
+    }
+    .conf-badge.conf-mid {
+      background: rgba(251, 191, 36, 0.1);
+      color: #fcd34d;
+      border-color: rgba(251, 191, 36, 0.28);
+    }
+    .conf-badge.conf-soft {
+      background: rgba(148, 163, 184, 0.12);
+      color: var(--muted);
+      border-color: rgba(148, 163, 184, 0.22);
+    }
+
+    .chip-ml {
+      flex-shrink: 0;
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 8px;
+      border-radius: 6px;
+      background: rgba(6, 78, 59, 0.42);
       color: #5eead4;
-      border: 1px solid rgba(45, 212, 191, 0.25);
+      border: 1px solid rgba(45, 212, 191, 0.22);
     }
     .chip-plain {
       flex-shrink: 0;
-      font-size: 0.65rem;
+      font-size: 0.6rem;
       font-weight: 600;
-      color: var(--muted);
-      padding: 5px 10px;
-      border-radius: 8px;
+      color: rgba(148, 163, 184, 0.95);
+      padding: 4px 8px;
+      border-radius: 6px;
       border: 1px solid var(--stroke);
       background: rgba(15, 23, 42, 0.35);
     }
 
-    .meta {
-      font-size: 0.78rem;
-      color: var(--muted);
+    .insight-line {
+      margin: 0 0 8px;
       padding-left: 8px;
-      margin-bottom: 12px;
+      font-size: 0.75rem;
+      line-height: 1.42;
+      color: rgba(186, 199, 214, 0.95);
+    }
+    .insight-line mono {
+      font-variant-numeric: tabular-nums;
+    }
+
+    .micro-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding-left: 8px;
+      margin-bottom: 10px;
+    }
+    .micro-pill {
+      font-size: 0.62rem;
+      font-weight: 600;
+      padding: 3px 7px;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .micro-pill.hit {
+      border-color: rgba(56, 189, 248, 0.25);
+      color: #bae6fd;
+    }
+    .micro-pill.acc {
+      border-color: rgba(251, 113, 133, 0.25);
+      color: #fecaca;
+    }
+
+    .slug-pill-inline {
+      display: inline-block;
+      margin-left: 6px;
+      font-size: 0.62rem;
+      font-weight: 600;
+      color: var(--violet);
+      opacity: 0.9;
     }
 
     .fav-row {
@@ -296,8 +485,8 @@
       align-items: center;
       gap: 8px;
       padding-left: 8px;
-      margin-bottom: 12px;
-      font-size: 0.88rem;
+      margin-bottom: 10px;
+      font-size: 0.82rem;
     }
     .fav-row strong {
       font-family: var(--font-display);
@@ -305,9 +494,7 @@
       color: var(--accent);
     }
 
-    .bar-wrap {
-      padding-left: 8px;
-    }
+    .bar-wrap { padding-left: 8px; }
     .bar {
       display: flex;
       height: 10px;
@@ -329,15 +516,42 @@
       display: flex;
       justify-content: space-between;
       gap: 8px;
-      margin-top: 10px;
+      margin-top: 9px;
       padding-left: 8px;
-      font-size: 0.78rem;
+      font-size: 0.73rem;
       font-variant-numeric: tabular-nums;
       color: var(--muted);
     }
     .nums span { flex: 1; text-align: center; }
     .nums span:first-child { text-align: left; }
     .nums span:last-child { text-align: right; }
+
+    .tap-hint {
+      font-size: 0.64rem;
+      color: rgba(148, 163, 184, 0.75);
+      padding-left: 8px;
+      margin-top: 9px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* Skeleton loading */
+    @keyframes skim {
+      0% { background-position: -120% 0; }
+      100% { background-position: 120% 0; }
+    }
+    .skel-line {
+      height: 10px;
+      border-radius: 5px;
+      background: linear-gradient(
+        110deg,
+        rgba(148, 163, 184, 0.08) 35%,
+        rgba(226, 232, 240, 0.1) 50%,
+        rgba(148, 163, 184, 0.08) 65%
+      );
+      background-size: 200% 100%;
+      animation: skim 1.35s linear infinite;
+    }
 
     .err {
       border-radius: var(--radius-md);
@@ -359,6 +573,16 @@
     .empty svg { width: 72px; height: 72px; margin-bottom: 14px; opacity: 0.85; }
     .empty p { margin: 0; color: var(--muted); font-size: 0.9rem; max-width: 22rem; margin-inline: auto; }
 
+    .filters-empty {
+      text-align: center;
+      padding: 28px 16px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      border: 1px dashed var(--stroke);
+      border-radius: var(--radius-md);
+      background: rgba(15, 23, 42, 0.25);
+    }
+
     footer {
       margin-top: 28px;
       padding-top: 20px;
@@ -378,6 +602,231 @@
       background: rgba(30, 41, 59, 0.8);
       padding: 2px 6px;
       border-radius: 4px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Modal estadísticas */
+    .stats-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 120;
+      background: rgba(6, 11, 23, 0.72);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.22s ease;
+    }
+    .stats-backdrop.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .stats-dialog {
+      position: fixed;
+      z-index: 121;
+      left: 50%;
+      top: min(8%, max(12px, env(safe-area-inset-top)));
+      transform: translate(-50%, 16px) scale(0.96);
+      width: min(24rem, calc(100vw - 24px));
+      max-height: min(86dvh, calc(100vh - 24px));
+      margin: 0;
+      padding: 0;
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius-lg);
+      background: var(--ink-mid);
+      box-shadow: var(--shadow), 0 0 0 1px rgba(255, 255, 255, 0.04);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.22s ease, transform 0.24s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .stats-dialog.is-open {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translate(-50%, 0) scale(1);
+    }
+
+    @media (max-width: 520px) {
+      .stats-dialog {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: none;
+        border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+        max-height: min(88dvh, 100vh);
+        transform: translateY(100%);
+      }
+      .stats-dialog.is-open {
+        transform: translateY(0);
+      }
+    }
+
+    .stats-head {
+      flex-shrink: 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 18px 18px 14px;
+      background: linear-gradient(165deg, rgba(28, 38, 62, 0.95), rgba(17, 26, 48, 0.98));
+      border-bottom: 1px solid var(--stroke);
+    }
+    .stats-head h2 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+      line-height: 1.3;
+      color: var(--text);
+    }
+    .stats-head .subtitle {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .stats-close {
+      flex-shrink: 0;
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      border: 1px solid var(--stroke);
+      background: rgba(15, 23, 42, 0.65);
+      color: var(--text);
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .stats-close:hover {
+      background: rgba(51, 65, 85, 0.6);
+      border-color: rgba(148, 163, 184, 0.35);
+    }
+    .stats-close:focus-visible {
+      outline: 2px solid var(--sky);
+      outline-offset: 2px;
+    }
+    .stats-close svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .stats-body {
+      padding: 14px 16px 18px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .stats-disclaimer {
+      font-size: 0.72rem;
+      line-height: 1.45;
+      color: var(--muted);
+      margin: 0 0 14px;
+      padding: 10px 12px;
+      border-radius: var(--radius-md);
+      background: rgba(15, 23, 42, 0.45);
+      border: 1px solid var(--stroke);
+    }
+
+    .stats-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .stats-team-card {
+      border-radius: var(--radius-md);
+      padding: 12px 12px 10px;
+      background: var(--card);
+      border: 1px solid var(--stroke);
+    }
+    .stats-team-card h3 {
+      margin: 0 0 10px;
+      font-family: var(--font-display);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--sky);
+      letter-spacing: 0.02em;
+    }
+    .stats-team-card.away h3 {
+      color: var(--rose);
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      font-size: 0.8rem;
+      padding: 5px 0;
+      border-top: 1px solid rgba(148, 163, 184, 0.1);
+    }
+    .stat-row:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+    .stat-row span:first-child {
+      color: var(--muted);
+    }
+    .stat-row span:last-child {
+      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .stats-model-block {
+      border-radius: var(--radius-md);
+      padding: 14px 12px 12px;
+      background: linear-gradient(145deg, rgba(52, 211, 153, 0.08), rgba(56, 189, 248, 0.06));
+      border: 1px solid rgba(52, 211, 153, 0.2);
+    }
+    .stats-model-block h4 {
+      margin: 0 0 10px;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .stats-model-note {
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin: 0 0 10px;
+      line-height: 1.4;
+    }
+    .stats-xg {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      font-variant-numeric: tabular-nums;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .stats-xg .sep {
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .stats-split-rows {
+      display: grid;
+      gap: 6px;
     }
   </style>
 </head>
@@ -401,7 +850,7 @@
         </div>
         <div>
           <h1>Betfree</h1>
-          <p class="tagline">Pronósticos 1X2 · digest modelo</p>
+          <p class="tagline">Pronósticos 1X2 · panel interactivo</p>
         </div>
       </div>
       <div class="hero-meta">
@@ -411,50 +860,565 @@
           </svg>
           Actualizar
         </button>
+        <button type="button" class="btn-outline" id="btn-clear-filters" hidden>Limpiar filtros</button>
         <span class="pill" id="stamp">…</span>
         <span class="pill" id="eval-badge" hidden></span>
       </div>
     </header>
 
-    <p class="section-title">Partidos</p>
+    <div class="section-title-row">
+      <p class="section-title">Partidos</p>
+    </div>
     <div id="msg"></div>
-    <ul id="list" class="card-list" role="list"></ul>
+
+    <div class="fixture-board">
+      <div class="filters-panel" id="filters-panel" hidden>
+        <div class="filters-row">
+          <label class="sr-only" for="filter-search">Buscar por nombre de equipo</label>
+          <input
+            type="search"
+            id="filter-search"
+            class="filter-search"
+            placeholder="Buscar equipo…"
+            autocomplete="off"
+            enterkeyhint="search"
+          />
+          <select id="filter-slug" class="filter-select" aria-label="Filtrar por competición"></select>
+        </div>
+        <div class="filters-row filter-meta">
+          <label class="chk-wrap"><input type="checkbox" id="filter-ml" /> Solo modelo ML</label>
+          <span id="filters-count" class="filters-count" aria-live="polite"></span>
+        </div>
+      </div>
+      <div id="list-host" aria-busy="false"></div>
+    </div>
 
     <footer>
-      Panel estático en GitHub Pages · fuente de datos <code>betfree_predictions.json</code>
-      <br /><a href="./instalacion.html">Cómo publicar y actualizar</a>
+      Panel GitHub Pages · <code>betfree_predictions.json</code>
+      <br /><a href="./instalacion.html">Actualizar datos</a>
     </footer>
   </main>
 
+  <div id="stats-backdrop" class="stats-backdrop" aria-hidden="true"></div>
+  <div
+    id="stats-dialog"
+    class="stats-dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="stats-dialog-title"
+    aria-hidden="true"
+  >
+    <div class="stats-head">
+      <div>
+        <h2 id="stats-dialog-title">Estadísticas</h2>
+        <div class="subtitle" id="stats-dialog-sub"></div>
+      </div>
+      <button type="button" class="stats-close" id="stats-close" aria-label="Cerrar panel de estadísticas">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <div class="stats-body" id="stats-body"></div>
+  </div>
+
   <script>
-    function pct(x) { return (100 * Number(x)).toFixed(1) + "%"; }
+    /* global document, Intl, fetch, sessionStorage */
+    var STORAGE_FILTERS = "betfree.pages.filters.v3";
+    var STORAGE_SCROLL = "betfree.pages.scrollY.v1";
+
+    var lastStatsNote = "";
+    var rawItemsAll = [];
+    var visibleItems = [];
+    var statsOpen = false;
+    var statsFocusEl = null;
+    var filtersWired = false;
+    var lastPayloadGenerated = "";
+
+    function pct(x) {
+      return (100 * Number(x)).toFixed(1) + "%";
+    }
     function favKey(ph, pd, pa) {
-      const m = Math.max(ph, pd, pa);
+      var m = Math.max(ph, pd, pa);
       if (m === ph) return "home";
       if (m === pa) return "away";
       return "draw";
     }
     function favLabel(ph, pd, pa) {
-      const m = Math.max(ph, pd, pa);
+      var m = Math.max(ph, pd, pa);
       if (m === ph) return "Local";
       if (m === pa) return "Visita";
       return "Empate";
     }
+
+    function confidenceBand(ph, pd, pa) {
+      var probs = [{ v: ph }, { v: pd }, { v: pa }]
+        .map(function (o) {
+          return o.v;
+        })
+        .sort(function (a, b) {
+          return b - a;
+        });
+      var top = probs[0];
+      var gap = probs[0] - probs[1];
+      var lbl,
+        cls;
+      if (top >= 0.52 && gap >= 0.14) {
+        lbl = "Marcada";
+        cls = "conf-strong";
+      } else if (gap >= 0.08 || top >= 0.48) {
+        lbl = "Moderada";
+        cls = "conf-mid";
+      } else {
+        lbl = "Muy abierta";
+        cls = "conf-soft";
+      }
+      return { lbl: lbl, cls: cls, gapPct: gap * 100, topPct: top * 100 };
+    }
+
+    function insightSentence(ph, pd, pa, fk) {
+      var c = confidenceBand(ph, pd, pa);
+      var edge = fk === "home" ? ph : fk === "away" ? pa : pd;
+      return (
+        "Gap al 2º marcador · " +
+        c.gapPct.toFixed(0) +
+        "% · Apuesta modelo " +
+        (fk === "draw" ? "empate · " + pct(pd) : (fk === "home" ? "local · " : "visita · ") + pct(edge))
+      );
+    }
+
+    function formatHeadingDate(iso) {
+      if (!iso || typeof iso !== "string") return "—";
+      try {
+        var d = new Date(iso.slice(0, 10) + "T12:00:00");
+        return new Intl.DateTimeFormat("es-AR", {
+          weekday: "long",
+          day: "numeric",
+          month: "short",
+        }).format(d);
+      } catch (e) {
+        return iso;
+      }
+    }
+
+    function uniqSlugs(items) {
+      var s = {};
+      items.forEach(function (it) {
+        if (it.slug) s[it.slug] = true;
+      });
+      return Object.keys(s).sort();
+    }
+
+    function loadStoredFilters() {
+      try {
+        var o = JSON.parse(sessionStorage.getItem(STORAGE_FILTERS) || "{}");
+        return { slug: o.slug || "", mlOnly: !!o.mlOnly, q: typeof o.q === "string" ? o.q : "" };
+      } catch (e) {
+        return { slug: "", mlOnly: false, q: "" };
+      }
+    }
+
+    function saveStoredFilters() {
+      try {
+        sessionStorage.setItem(
+          STORAGE_FILTERS,
+          JSON.stringify({
+            slug: document.getElementById("filter-slug").value,
+            mlOnly: document.getElementById("filter-ml").checked,
+            q: document.getElementById("filter-search").value.trim(),
+          })
+        );
+      } catch (e) {}
+    }
+
+    function populateSlugSelect(slugs) {
+      var sel = document.getElementById("filter-slug");
+      var preserved = sel.value || loadStoredFilters().slug;
+      sel.innerHTML = '<option value="">Todas las competiciones</option>';
+      slugs.forEach(function (slug) {
+        var o = document.createElement("option");
+        o.value = slug;
+        o.textContent = slug;
+        sel.appendChild(o);
+      });
+      if (preserved && slugs.indexOf(preserved) >= 0) sel.value = preserved;
+    }
+
+    function applyStoredInputs() {
+      var f = loadStoredFilters();
+      var sel = document.getElementById("filter-slug");
+      document.getElementById("filter-ml").checked = f.mlOnly;
+      document.getElementById("filter-search").value = f.q;
+      sel.value = f.slug || "";
+      if (f.slug && sel.value !== f.slug) sel.value = "";
+    }
+
+    function getFilterStateDom() {
+      return {
+        slug: document.getElementById("filter-slug").value || "",
+        mlOnly: document.getElementById("filter-ml").checked,
+        q: document.getElementById("filter-search").value.trim().toLowerCase(),
+      };
+    }
+
+    function filterPipe(items, f) {
+      return items.filter(function (it) {
+        if (f.mlOnly && !it.used_ml) return false;
+        if (f.slug && String(it.slug || "") !== f.slug) return false;
+        if (f.q) {
+          var h = String(it.home_team || "").toLowerCase();
+          var a = String(it.away_team || "").toLowerCase();
+          if (h.indexOf(f.q) === -1 && a.indexOf(f.q) === -1) return false;
+        }
+        return true;
+      });
+    }
+
+    function groupSectionsInOrder(items) {
+      var cur = null;
+      var sections = [];
+      items.forEach(function (it, ix) {
+        var d = String(it.local_date_iso || "").trim() || "—";
+        if (!cur || cur.dateIso !== d) {
+          cur = { dateIso: d, indices: [] };
+          sections.push(cur);
+        }
+        cur.indices.push(ix);
+      });
+      return sections;
+    }
+
+    function buildMicroHtml(ts) {
+      if (!ts) return "";
+      var h = ts.home;
+      var aw = ts.away;
+      var parts = [];
+      if (h && Number(h.n_matches) >= 1 && h.gf_avg != null) {
+        parts.push(
+          '<span class="micro-pill hit" title="Promedio goles a favor (últimos ' +
+            Number(ts.recent_matches || 5) +
+            ')">Loc GF₅ ' +
+            Number(h.gf_avg).toFixed(1) +
+            "</span>"
+        );
+      }
+      if (h && Number(h.n_matches) >= 1 && h.ga_avg != null) {
+        parts.push(
+          '<span class="micro-pill acc" title="Promedio goles encajados">Loc GC₅ ' +
+            Number(h.ga_avg).toFixed(1) +
+            "</span>"
+        );
+      }
+      if (aw && Number(aw.n_matches) >= 1 && aw.gf_avg != null) {
+        parts.push(
+          '<span class="micro-pill hit">Vis GF₅ ' + Number(aw.gf_avg).toFixed(1) + "</span>"
+        );
+      }
+      if (aw && Number(aw.n_matches) >= 1 && aw.ga_avg != null) {
+        parts.push(
+          '<span class="micro-pill acc">Vis GC₅ ' + Number(aw.ga_avg).toFixed(1) + "</span>"
+        );
+      }
+      return parts.length
+        ? '<div class="micro-stats">' + parts.join("") + "</div>"
+        : "";
+    }
+
     async function loadData() {
-      const url = "./betfree_predictions.json?t=" + Date.now();
-      const res = await fetch(url, { cache: "no-store" });
+      var url = "./betfree_predictions.json?t=" + Date.now();
+      var res = await fetch(url, { cache: "no-store" });
       if (!res.ok) throw new Error("HTTP " + res.status);
       return res.json();
     }
-    function render(data) {
-      document.getElementById("msg").innerHTML = "";
-      const gen = data.generated_at_utc || "—";
-      const n = data.items ? data.items.length : 0;
-      document.getElementById("stamp").textContent =
-        n + " partido" + (n !== 1 ? "s" : "") + " · " + gen.slice(0, 19).replace("T", " ");
 
-      const ev = data.live_eval;
-      const eb = document.getElementById("eval-badge");
+    function escapeHtml(s) {
+      return String(s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function fmtOptNum(v, digs) {
+      if (v == null || typeof v !== "number" || Number.isNaN(v)) return "—";
+      return Number(v).toFixed(digs);
+    }
+
+    function statsTeamCard(sideCls, title, blk, winLabel) {
+      var headline = blk && blk.name ? String(blk.name) : title;
+      var n = blk && blk.n_matches != null ? Number(blk.n_matches) : 0;
+      var gf = blk && blk.gf_avg != null ? fmtOptNum(blk.gf_avg, 2) : "—";
+      var ga = blk && blk.ga_avg != null ? fmtOptNum(blk.ga_avg, 2) : "—";
+      var note =
+        n < 1
+          ? '<p class="stats-model-note">Sin suficientes datos en el histórico.</p>'
+          : "";
+      return (
+        '<div class="stats-team-card ' +
+        escapeHtml(sideCls) +
+        '"><h3>' +
+        escapeHtml(headline) +
+        "</h3>" +
+        note +
+        '<div class="stat-row"><span>Ventana (' +
+        escapeHtml(winLabel) +
+        ")</span><span>" +
+        (n >= 1 ? String(n) : "0") +
+        "</span></div>" +
+        '<div class="stat-row"><span>Goles a favor (media)</span><span>' +
+        gf +
+        "</span></div>" +
+        '<div class="stat-row"><span>Goles encajados (media)</span><span>' +
+        ga +
+        "</span></div></div>"
+      );
+    }
+
+    function buildStatsBody(it) {
+      var ts = it.team_stats;
+      var wl = ts && ts.recent_matches ? "últimos " + ts.recent_matches : "últimos 5";
+      var disc = escapeHtml(lastStatsNote || "");
+
+      var grid =
+        statsTeamCard("", "Local", ts && ts.home ? ts.home : null, wl) +
+        statsTeamCard("away", "Visita", ts && ts.away ? ts.away : null, wl);
+
+      var model = "";
+      var m = ts && ts.match_model_estimate;
+      if (m) {
+        model =
+          '<div class="stats-model-block"><h4>Salud del enfrentamiento (modelo)</h4>' +
+          '<p class="stats-model-note">' +
+          escapeHtml(m.label_es || "") +
+          " · valores repartidos local/visita.</p>" +
+          '<div class="stats-xg">' +
+          '<span>xG Local ' +
+          fmtOptNum(m.x_goals_home, 2) +
+          '</span><span class="sep">·</span><span>xG Visita ' +
+          fmtOptNum(m.x_goals_away, 2) +
+          "</span></div>" +
+          '<div class="stats-split-rows">' +
+          '<div class="stat-row"><span>Corners (exp.) L / V / Tot</span><span>' +
+          fmtOptNum(m.corners_home, 1) +
+          " / " +
+          fmtOptNum(m.corners_away, 1) +
+          " / " +
+          fmtOptNum(m.corners_total, 1) +
+          "</span></div>" +
+          '<div class="stat-row"><span>Amarillas aprox. L / V / Tot</span><span>' +
+          fmtOptNum(m.yellow_cards_home, 2) +
+          " / " +
+          fmtOptNum(m.yellow_cards_away, 2) +
+          " / " +
+          fmtOptNum(m.yellow_cards_total, 2) +
+          "</span></div></div></div>";
+      } else if (!ts) {
+        model =
+          '<div class="stats-model-block"><h4>Falta team_stats</h4>' +
+          '<p class="stats-model-note">Regenerá <code>betfree_predictions.json</code> con export v2.</p></div>';
+      }
+
+      return (
+        (disc ? '<p class="stats-disclaimer">' + disc + "</p>" : "") +
+        '<div class="stats-grid-2">' +
+        grid +
+        "</div>" +
+        model
+      );
+    }
+
+    function closeStats() {
+      if (!statsOpen) return;
+      statsOpen = false;
+      document.getElementById("stats-backdrop").classList.remove("is-open");
+      document.getElementById("stats-dialog").classList.remove("is-open");
+      document.getElementById("stats-backdrop").setAttribute("aria-hidden", "true");
+      document.getElementById("stats-dialog").setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      if (statsFocusEl && typeof statsFocusEl.focus === "function") statsFocusEl.focus();
+      statsFocusEl = null;
+    }
+
+    function openStats(idx) {
+      var it = visibleItems[idx];
+      if (!it) return;
+      statsFocusEl = document.activeElement;
+      statsOpen = true;
+      document.getElementById("stats-dialog-title").textContent = it.home_team + " vs " + it.away_team;
+      document.getElementById("stats-dialog-sub").textContent = [it.local_date_iso, it.slug || ""]
+        .filter(Boolean)
+        .join(" · ");
+
+      document.getElementById("stats-body").innerHTML = buildStatsBody(it);
+
+      document.getElementById("stats-backdrop").classList.add("is-open");
+      document.getElementById("stats-dialog").classList.add("is-open");
+      document.getElementById("stats-backdrop").setAttribute("aria-hidden", "false");
+      document.getElementById("stats-dialog").setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      document.getElementById("stats-close").focus();
+    }
+
+    function showSkeleton(host) {
+      host.setAttribute("aria-busy", "true");
+      var sk = "";
+      for (var i = 0; i < 3; i++) {
+        sk +=
+          '<li class="match-card" style="pointer-events:none;opacity:0.72"><div class="match-head"><div class="skel-line" style="width:72%"></div><div class="skel-line" style="width:20%"></div></div>' +
+          '<div class="skel-line" style="width:90%;margin:8px 0 8px 8px"></div><div class="skel-line" style="width:94%;margin-left:8px"></div></li>';
+      }
+      host.innerHTML = '<div class="day-block"><ul class="card-list" role="list">' + sk + "</ul></div>";
+    }
+
+    function repaintList() {
+      var host = document.getElementById("list-host");
+      var fstate = getFilterStateDom();
+      visibleItems = filterPipe(rawItemsAll, fstate);
+      var fc = visibleItems.length;
+      var fcEl = document.getElementById("filters-count");
+
+      fcEl.textContent = fc === rawItemsAll.length ? fc + " partidos" : fc + " de " + rawItemsAll.length + " · filtrados";
+      document.getElementById("btn-clear-filters").hidden =
+        !fstate.slug && !fstate.mlOnly && !document.getElementById("filter-search").value.trim();
+
+      if (!fc) {
+        host.innerHTML =
+          '<p class="filters-empty">Ningún partido coincide. Probá otro equipo o cambiá de competición.</p>';
+        return;
+      }
+
+      var sections = groupSectionsInOrder(visibleItems);
+      var fragParts = "";
+
+      sections.forEach(function (sec) {
+        fragParts +=
+          '<section class="day-block"><h3 class="day-heading">' +
+          escapeHtml(formatHeadingDate(sec.dateIso)) +
+          '</h3><ul class="card-list" role="list">';
+        sec.indices.forEach(function (ix) {
+          var it = visibleItems[ix];
+          var ph = Number(it.p_home),
+            pd = Number(it.p_draw),
+            pa = Number(it.p_away);
+          var fk = favKey(ph, pd, pa);
+          var band = confidenceBand(ph, pd, pa);
+          var mlChip = it.used_ml
+            ? '<span class="chip-ml">ML</span>'
+            : '<span class="chip-plain">Poisson</span>';
+          fragParts +=
+            '<li class="match-card" data-fav="' +
+            fk +
+            '" role="listitem" tabindex="0" data-idx="' +
+            ix +
+            '" aria-haspopup="dialog" aria-label="' +
+            escapeHtml("Ver detalle estadístico: " + it.home_team + " vs " + it.away_team) +
+            '">' +
+            '<div class="match-head"><div><div class="teams">' +
+            escapeHtml(it.home_team) +
+            '<span class="vs">vs</span>' +
+            escapeHtml(it.away_team) +
+            '</div></div><div class="badge-stack"><span class="conf-badge ' +
+            band.cls +
+            '">' +
+            escapeHtml(band.lbl + " · " + band.topPct.toFixed(0) + "%") +
+            '</span>' +
+            mlChip +
+            "</div></div>" +
+            '<p class="insight-line">' +
+            escapeHtml(insightSentence(ph, pd, pa, fk)) +
+            "</p>" +
+            buildMicroHtml(it.team_stats) +
+            '<div class="fav-row">Favorito: <strong>' +
+            favLabel(ph, pd, pa) +
+            "</strong>";
+
+          if (it.slug) fragParts += '<span class="slug-pill-inline">' + escapeHtml(it.slug) + "</span>";
+          fragParts +=
+            '</div>' +
+            '<div class="bar-wrap"><div class="bar" role="img" aria-label="Distribución 1X2">' +
+            '<span class="p1" style="width:' +
+            (ph * 100).toFixed(2) +
+            '%"></span><span class="p2" style="width:' +
+            (pd * 100).toFixed(2) +
+            '%"></span><span class="p3" style="width:' +
+            (pa * 100).toFixed(2) +
+            '%"></span></div></div>' +
+            '<div class="nums"><span>Local ' +
+            pct(ph) +
+            '</span><span>Emp ' +
+            pct(pd) +
+            '</span><span>Visita ' +
+            pct(pa) +
+            '</span></div><p class="tap-hint">Detalle xG · corners · forma</p></li>';
+        });
+        fragParts += "</ul></section>";
+      });
+
+      host.innerHTML = fragParts;
+
+      host.setAttribute("aria-busy", "false");
+      updateStampCount();
+
+      requestAnimationFrame(function () {
+        try {
+          var y = parseFloat(sessionStorage.getItem(STORAGE_SCROLL) || "");
+          if (!Number.isNaN(y)) window.scrollTo(0, y);
+        } catch (e) {}
+      });
+    }
+
+    function wireFiltersOnce() {
+      if (filtersWired) return;
+      filtersWired = true;
+      var debSearch;
+      function debouncedSearch() {
+        clearTimeout(debSearch);
+        debSearch = setTimeout(function () {
+          saveStoredFilters();
+          repaintList();
+        }, 280);
+      }
+      document.getElementById("filter-search").addEventListener("input", debouncedSearch);
+      document.getElementById("filter-search").addEventListener("change", function () {
+        clearTimeout(debSearch);
+        saveStoredFilters();
+        repaintList();
+      });
+      document.getElementById("filter-slug").addEventListener("change", function () {
+        saveStoredFilters();
+        repaintList();
+      });
+      document.getElementById("filter-ml").addEventListener("change", function () {
+        saveStoredFilters();
+        repaintList();
+      });
+      document.addEventListener(
+        "scroll",
+        function () {
+          clearTimeout(window.__bfScr);
+          window.__bfScr = setTimeout(function () {
+            try {
+              sessionStorage.setItem(STORAGE_SCROLL, String(window.scrollY || 0));
+            } catch (e) {}
+          }, 80);
+        },
+        { passive: true }
+      );
+    }
+
+    function render(payload) {
+      document.getElementById("msg").innerHTML = "";
+      lastStatsNote = payload.stats_note_es || "";
+
+      rawItemsAll = Array.isArray(payload.items) ? payload.items.slice() : [];
+      visibleItems = rawItemsAll.slice();
+
+      var gen = payload.generated_at_utc || "—";
+      lastPayloadGenerated = gen.slice(0, 19).replace("T", " ");
+      updateStampCount();
+
+      var ev = payload.live_eval;
+      var eb = document.getElementById("eval-badge");
       if (ev && ev.metrics && typeof ev.metrics.multiclass_log_loss === "number") {
         eb.hidden = false;
         eb.textContent =
@@ -464,90 +1428,93 @@
         eb.hidden = true;
       }
 
-      const ul = document.getElementById("list");
-      ul.innerHTML = "";
+      document.getElementById("filters-panel").hidden =
+        !!(payload.note && (!payload.items || !payload.items.length)) || rawItemsAll.length === 0;
 
-      if (data.note && (!data.items || !data.items.length)) {
+      if (payload.note && (!payload.items || !payload.items.length)) {
+        document.getElementById("stamp").textContent = "Sin datos · " + lastPayloadGenerated;
+        document.getElementById("list-host").innerHTML = "";
         document.getElementById("msg").innerHTML =
           '<div class="empty" role="status">' +
           '<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
           '<circle cx="40" cy="40" r="28" stroke="url(#ge)" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.6"/>' +
-          '<path d="M40 22v36M22 40h36" stroke="#64748b" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>' +
-          '<circle cx="40" cy="40" r="6" fill="rgba(52,211,153,0.25)" stroke="#34d399" stroke-width="1.2"/>' +
           '<defs><linearGradient id="ge" x1="12" y1="12" x2="68" y2="68"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#34d399"/></linearGradient></defs></svg>' +
-          "<p>" + escapeHtml(String(data.note)) + "</p></div>";
+          "<p>" +
+          escapeHtml(String(payload.note)) +
+          "</p></div>";
         return;
       }
 
-      if (!n) {
+      if (!rawItemsAll.length) {
+        document.getElementById("stamp").textContent = "Vacío · " + lastPayloadGenerated;
+        document.getElementById("list-host").innerHTML = "";
         document.getElementById("msg").innerHTML =
-          '<div class="empty" role="status">' +
-          '<svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="40" cy="40" r="30" stroke="#334155" stroke-width="1.2" fill="rgba(30,41,59,0.4)"/>' +
-          '<path d="M28 40h24M40 28v24" stroke="#64748b" stroke-width="1.5" stroke-linecap="round"/></svg>' +
-          "<p>No hay partidos en el JSON. Ejecutá el digest y <code>scripts/export_pages_predictions.py</code> en tu PC.</p></div>";
+          '<div class="empty" role="status"><p>Ejecutá el digest y <code>scripts/export_pages_predictions.py</code>.</p></div>';
         return;
       }
 
-      (data.items || []).forEach(function (it) {
-        const ph = Number(it.p_home), pd = Number(it.p_draw), pa = Number(it.p_away);
-        const fk = favKey(ph, pd, pa);
-        const li = document.createElement("li");
-        li.className = "match-card";
-        li.setAttribute("data-fav", fk);
-        li.setAttribute("role", "listitem");
-        const mlChip = it.used_ml ? '<span class="chip-ml">ML</span>' : '<span class="chip-plain">Poisson</span>';
-        li.innerHTML =
-          '<div class="match-head"><div><div class="teams">' +
-          escapeHtml(it.home_team) +
-          '<span class="vs">vs</span>' +
-          escapeHtml(it.away_team) +
-          "</div></div>" +
-          mlChip +
-          "</div>" +
-          '<div class="meta">' +
-          escapeHtml(it.local_date_iso || "") +
-          (it.slug ? " · " + escapeHtml(it.slug) : "") +
-          "</div>" +
-          '<div class="fav-row">Favorito modelo: <strong>' +
-          favLabel(ph, pd, pa) +
-          "</strong></div>" +
-          '<div class="bar-wrap"><div class="bar" role="img" aria-label="Probabilidades 1X2">' +
-          '<span class="p1" style="width:' +
-          (ph * 100).toFixed(2) +
-          '%"></span><span class="p2" style="width:' +
-          (pd * 100).toFixed(2) +
-          '%"></span><span class="p3" style="width:' +
-          (pa * 100).toFixed(2) +
-          '%"></span></div></div>' +
-          '<div class="nums"><span>Local ' +
-          pct(ph) +
-          "</span><span>Empate " +
-          pct(pd) +
-          "</span><span>Visita " +
-          pct(pa) +
-          "</span></div>";
-        ul.appendChild(li);
-      });
+      populateSlugSelect(uniqSlugs(rawItemsAll));
+      applyStoredInputs();
+      wireFiltersOnce();
+      repaintList();
+      document.getElementById("filters-panel").hidden = false;
     }
-    function escapeHtml(s) {
-      return String(s)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;");
+
+    function updateStampCount() {
+      document.getElementById("stamp").textContent =
+        visibleItems.length +
+        " visible" +
+        (visibleItems.length !== rawItemsAll.length ? " · " + rawItemsAll.length + " total" : "") +
+        " · " +
+        lastPayloadGenerated;
     }
+
+    document.getElementById("btn-clear-filters").addEventListener("click", function () {
+      document.getElementById("filter-search").value = "";
+      document.getElementById("filter-slug").value = "";
+      document.getElementById("filter-ml").checked = false;
+      saveStoredFilters();
+      repaintList();
+    });
+
     async function refresh() {
+      var host = document.getElementById("list-host");
+      showSkeleton(host);
       document.getElementById("stamp").textContent = "Cargando…";
+      closeStats();
       try {
-        const data = await loadData();
+        var data = await loadData();
         render(data);
       } catch (e) {
         document.getElementById("msg").innerHTML =
-          '<p class="err" role="alert">No se pudo cargar <code>betfree_predictions.json</code>. Comprobá que GitHub Pages sirva la carpeta <code>docs/</code> y que el archivo exista en el repo.</p>';
+          '<p class="err" role="alert">No se pudo cargar <code>betfree_predictions.json</code>.</p>';
+        host.innerHTML = "";
         document.getElementById("stamp").textContent = "Error";
       }
     }
+
     document.getElementById("btn-refresh").addEventListener("click", refresh);
+    document.getElementById("stats-close").addEventListener("click", closeStats);
+    document.getElementById("stats-backdrop").addEventListener("click", closeStats);
+    document.addEventListener("keydown", function (e) {
+      if (statsOpen && e.key === "Escape") closeStats();
+    });
+
+    document.getElementById("list-host").addEventListener("click", function (e) {
+      var card = e.target.closest(".match-card[data-idx]");
+      if (!card) return;
+      openStats(Number(card.dataset.idx));
+    });
+
+    document.getElementById("list-host").addEventListener("keydown", function (e) {
+      var t = e.target;
+      if (!t.classList.contains("match-card")) return;
+      if (e.key === "Enter" || e.key === " " || e.code === "Space") {
+        e.preventDefault();
+        openStats(Number(t.dataset.idx));
+      }
+    });
+
     refresh();
   </script>
 </body>
