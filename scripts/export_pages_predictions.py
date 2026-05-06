@@ -9,6 +9,7 @@ Lee SQLITE_DB_PATH (o betfree.db) y la tabla digest_prediction_audit.
 from __future__ import annotations
 
 import json
+import os
 import sqlite3
 import sys
 from datetime import date, datetime, timezone
@@ -42,9 +43,15 @@ def main() -> None:
         "stats_note_es": (
             "Goles (últ. N): medias desde el CSV histórico antes del día del partido. "
             "Corners y tarjetas: estimación heurística del modelo para ESTE enfrentamiento, "
-            "no promedios reales por equipo en el CSV."
+            "no promedios reales por equipo en el CSV. "
+            "ClubElo (opcional): rating público europeo desde api.clubelo.com por nombre+Liga cuando hay RED al export."
         ),
     }
+
+    skip_club_elo_env = (
+        str(os.getenv("EXPORT_PAGES_SKIP_CLUBELO", "")).strip().lower()
+        in ("1", "true", "yes", "on")
+    )
 
     ev_path = ROOT / "data" / "digest_live_evaluation.json"
     if ev_path.is_file():
@@ -81,11 +88,18 @@ def main() -> None:
             LIMIT 120
             """
         )
+        from src.data_engine.club_elo_ratings import (
+            ClubEloRanking,
+            clubelo_country_hint_for_digest_slug,
+            load_club_elo_ranking,
+        )
         from src.predictor.digest_roll_context import DigestRollContext
         from src.predictor.pages_export_team_stats import build_pages_team_stats_from_context
 
         audit_rows = cur.fetchall()
         ctx_by_day: dict[date, DigestRollContext] = {}
+        elo_cache_root = ROOT / "data" / "cache" / "club_elo"
+        elo_cache: dict[date, ClubEloRanking | None] = {}
 
         def roll_ctx_for(day_iso: str) -> DigestRollContext | None:
             if not hist_ok:
@@ -98,12 +112,25 @@ def main() -> None:
                 ctx_by_day[d_key] = DigestRollContext.from_csv(str(Path(hist_csv).resolve()), before_day=d_key)
             return ctx_by_day[d_key]
 
+        def club_elo_for(day_iso: str) -> ClubEloRanking | None:
+            if skip_club_elo_env:
+                return None
+            try:
+                dk = date.fromisoformat(day_iso.strip())
+            except ValueError:
+                return None
+            if dk not in elo_cache:
+                elo_cache[dk] = load_club_elo_ranking(dk, elo_cache_root, allow_network=True)
+            return elo_cache[dk]
+
         for r in audit_rows:
             row_home = str(r["home_team"])
             row_away = str(r["away_team"])
             row_slug = str(r["digest_slug"] or "")
             row_date = str(r["local_date_iso"])
             roller = roll_ctx_for(row_date)
+            ce = club_elo_for(row_date)
+            cc = clubelo_country_hint_for_digest_slug(row_slug)
             stats = (
                 build_pages_team_stats_from_context(
                     roller,
@@ -111,6 +138,8 @@ def main() -> None:
                     home_team=row_home,
                     away_team=row_away,
                     recent_matches=5,
+                    club_elo_ranking=ce,
+                    club_elo_country_hint=cc,
                 )
                 if roller is not None
                 else None

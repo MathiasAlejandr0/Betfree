@@ -470,6 +470,10 @@
       border-color: rgba(251, 113, 133, 0.25);
       color: #fecaca;
     }
+    .micro-pill.elo {
+      border-color: rgba(167, 139, 250, 0.35);
+      color: #ddd6fe;
+    }
 
     .slug-pill-inline {
       display: inline-block;
@@ -828,6 +832,28 @@
       display: grid;
       gap: 6px;
     }
+
+    .stats-clubelo-block {
+      border-radius: var(--radius-md);
+      padding: 12px 12px 10px;
+      margin-bottom: 12px;
+      background: rgba(76, 29, 149, 0.12);
+      border: 1px solid rgba(167, 139, 250, 0.28);
+    }
+    .stats-clubelo-block h4 {
+      margin: 0 0 8px;
+      font-family: var(--font-display);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--violet);
+    }
+    .stats-elo-kind {
+      font-weight: 500;
+      opacity: 0.75;
+      font-size: 0.68rem;
+    }
   </style>
 </head>
 <body>
@@ -1119,9 +1145,71 @@
           '<span class="micro-pill acc">Vis GC₅ ' + Number(aw.ga_avg).toFixed(1) + "</span>"
         );
       }
+      var ce = ts.club_elo;
+      if (ce) {
+        var rd = ce.ranking_date_iso ? escapeHtml(String(ce.ranking_date_iso)) : "";
+        if (ce.home && ce.home.rating != null) {
+          parts.push(
+            '<span class="micro-pill elo" title="ClubElo ranking ' +
+              rd +
+              '">Loc ★ ' +
+              Number(ce.home.rating).toFixed(0) +
+              "</span>"
+          );
+        }
+        if (ce.away && ce.away.rating != null) {
+          parts.push(
+            '<span class="micro-pill elo" title="ClubElo ranking ' +
+              rd +
+              '">Vis ★ ' +
+              Number(ce.away.rating).toFixed(0) +
+              "</span>"
+          );
+        }
+      }
       return parts.length
         ? '<div class="micro-stats">' + parts.join("") + "</div>"
         : "";
+    }
+
+    function buildClubEloHtml(ce) {
+      if (!ce || (!ce.home && !ce.away)) return "";
+      var d = escapeHtml(ce.ranking_date_iso || "");
+      var sub = escapeHtml(ce.source_note_es || "");
+      function sideRow(label, s) {
+        if (!s || s.rating == null) {
+          return (
+            '<div class="stat-row"><span>' +
+            escapeHtml(label) +
+            '</span><span>Sin cruce en ClubElo</span></div>'
+          );
+        }
+        var rk = s.rank != null ? "#" + Number(s.rank) : "—";
+        var mo = s.matched_as ? " · como " + escapeHtml(String(s.matched_as)) : "";
+        var mt = s.match ? "(" + escapeHtml(String(s.match)) + ")" : "";
+        return (
+          '<div class="stat-row"><span>' +
+          escapeHtml(label) +
+          "</span><span>" +
+          Number(s.rating).toFixed(0) +
+          " " +
+          rk +
+          mo +
+          ' <span class="stats-elo-kind">' +
+          mt +
+          "</span></span></div>"
+        );
+      }
+      return (
+        '<div class="stats-clubelo-block"><h4>ClubElo público · ' +
+        d +
+        '</h4><p class="stats-model-note">' +
+        sub +
+        '</p><div class="stats-split-rows">' +
+        sideRow("Local", ce.home) +
+        sideRow("Visita", ce.away) +
+        "</div></div>"
+      );
     }
 
     async function loadData() {
@@ -1220,6 +1308,7 @@
 
       return (
         (disc ? '<p class="stats-disclaimer">' + disc + "</p>" : "") +
+        buildClubEloHtml(ts && ts.club_elo ? ts.club_elo : null) +
         '<div class="stats-grid-2">' +
         grid +
         "</div>" +
