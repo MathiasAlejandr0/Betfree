@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Betfree — Publicar en GitHub Pages</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #e2e8f0; padding: 16px; line-height: 1.55; max-width: 40rem; margin: 0 auto; }
+    code { background: #1e293b; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    h1 { font-size: 1.2rem; }
+    ol { padding-left: 1.2rem; }
+    li { margin: 0.5rem 0; }
+    a { color: #38bdf8; }
+  </style>
+</head>
+<body>
+  <h1>Publicar Betfree en GitHub Pages (móvil)</h1>
+  <ol>
+    <li>En GitHub: <strong>Settings → Pages → Build and deployment</strong>. Origen: <strong>Deploy from a branch</strong>. Rama: <strong>main</strong>, carpeta: <strong>/docs</strong>. Guardar.</li>
+    <li>En tu PC, con el digest ya corrido y <code>betfree.db</code> con datos: <code>python scripts/export_pages_predictions.py</code></li>
+    <li>Commit y push: <code>git add docs/betfree_predictions.json docs/index.html</code> y luego <code>git commit</code> / <code>git push</code>.</li>
+    <li>Tras 1–2 minutos, abrí en el teléfono: <code>https://&lt;usuario&gt;.github.io/&lt;repositorio&gt;/</code> (ej. <code>MathiasAlejandr0.github.io/Betfree/</code>).</li>
+  </ol>
+  <p><strong>Sobre <code>appbetfree.html</code> (raíz del repo):</strong> no es esta vista. Es un documento tipo “export de código” del proyecto <em>ProBet</em> (Next.js). El panel del modelo Betfree es <a href="./index.html">index.html</a> + <code>betfree_predictions.json</code>.</p>
+</body>
+</html>

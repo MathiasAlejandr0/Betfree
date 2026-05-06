@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <title>Betfree — Pronósticos</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --muted: #94a3b8;
+      --text: #f1f5f9;
+      --accent: #38bdf8;
+      --ok: #4ade80;
+      --warn: #fbbf24;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100dvh;
+      padding: 12px 14px 28px;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: linear-gradient(180deg, var(--bg) 70%, transparent);
+      padding-bottom: 8px;
+    }
+    h1 { font-size: 1.25rem; margin: 0 0 4px; font-weight: 700; }
+    .sub { font-size: 0.8rem; color: var(--muted); margin: 0 0 10px; }
+    .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    button {
+      background: var(--card);
+      color: var(--text);
+      border: 1px solid #334155;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      min-height: 44px;
+    }
+    button:active { transform: scale(0.98); }
+    .badge {
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #334155;
+      color: var(--muted);
+    }
+    .badge.ml { background: #164e63; color: #a5f3fc; }
+    .badge.warn { background: #713f12; color: #fde68a; }
+    ul { list-style: none; padding: 0; margin: 12px 0 0; }
+    li {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 14px 14px 12px;
+      margin-bottom: 10px;
+      border: 1px solid #334155;
+    }
+    .teams { font-weight: 600; font-size: 1rem; margin-bottom: 8px; line-height: 1.35; }
+    .meta { font-size: 0.75rem; color: var(--muted); margin-bottom: 8px; }
+    .bar {
+      display: flex;
+      height: 8px;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+    .bar span { height: 100%; }
+    .p1 { background: #0ea5e9; }
+    .p2 { background: #64748b; }
+    .p3 { background: #f472b6; }
+    .nums { display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--muted); margin-top: 6px; }
+    .err { color: #f87171; font-size: 0.85rem; padding: 12px; background: #450a0a; border-radius: 10px; }
+    footer { margin-top: 20px; font-size: 0.72rem; color: var(--muted); text-align: center; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Betfree</h1>
+    <p class="sub" id="updated">Cargando…</p>
+    <div class="row">
+      <button type="button" id="btn-refresh">Actualizar</button>
+      <span class="badge" id="eval-badge" hidden></span>
+    </div>
+  </header>
+  <div id="msg"></div>
+  <ul id="list"></ul>
+  <footer>
+    Panel estático (GitHub Pages). Datos: <code>betfree_predictions.json</code>.
+    <br /><a href="./instalacion.html">Cómo publicar y actualizar desde tu PC</a>
+  </footer>
+  <script>
+    function pct(x) { return (100 * Number(x)).toFixed(1) + "%"; }
+    function fav(ph, pd, pa) {
+      const m = Math.max(ph, pd, pa);
+      if (m === ph) return "Local";
+      if (m === pa) return "Visita";
+      return "Empate";
+    }
+    async function loadData() {
+      const url = "./betfree_predictions.json?t=" + Date.now();
+      const res = await fetch(url, { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    }
+    function render(data) {
+      document.getElementById("msg").innerHTML = "";
+      const gen = data.generated_at_utc || "—";
+      document.getElementById("updated").textContent =
+        "Actualizado (UTC): " + gen + " · " + (data.items ? data.items.length : 0) + " partidos";
+      const ev = data.live_eval;
+      const eb = document.getElementById("eval-badge");
+      if (ev && ev.metrics && typeof ev.metrics.multiclass_log_loss === "number") {
+        eb.hidden = false;
+        eb.textContent =
+          "Eval. vivo LL " + ev.metrics.multiclass_log_loss.toFixed(3) + " (" + (ev.status || "?") + ")";
+        eb.className = "badge " + (ev.status === "breach" ? "warn" : "ml");
+      } else {
+        eb.hidden = true;
+      }
+      const ul = document.getElementById("list");
+      ul.innerHTML = "";
+      if (data.note && (!data.items || !data.items.length)) {
+        document.getElementById("msg").innerHTML =
+          '<p class="err">' + String(data.note) + "</p>";
+      }
+      (data.items || []).forEach(function (it) {
+        const ph = Number(it.p_home), pd = Number(it.p_draw), pa = Number(it.p_away);
+        const li = document.createElement("li");
+        li.innerHTML =
+          '<div class="teams">' +
+          escapeHtml(it.home_team) +
+          " · " +
+          escapeHtml(it.away_team) +
+          "</div>" +
+          '<div class="meta">' +
+          escapeHtml(it.local_date_iso || "") +
+          (it.slug ? " · " + escapeHtml(it.slug) : "") +
+          (it.used_ml ? ' <span class="badge ml">1X2 ML/mezcla</span>' : "") +
+          "</div>" +
+          "<div>Favorito modelo: <strong>" +
+          fav(ph, pd, pa) +
+          "</strong></div>" +
+          '<div class="bar"><span class="p1" style="width:' +
+          (ph * 100).toFixed(2) +
+          '%"></span><span class="p2" style="width:' +
+          (pd * 100).toFixed(2) +
+          '%"></span><span class="p3" style="width:' +
+          (pa * 100).toFixed(2) +
+          '%"></span></div>' +
+          '<div class="nums"><span>Loc ' +
+          pct(ph) +
+          "</span><span>Emp " +
+          pct(pd) +
+          "</span><span>Vis " +
+          pct(pa) +
+          "</span></div>";
+        ul.appendChild(li);
+      });
+    }
+    function escapeHtml(s) {
+      return String(s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+    async function refresh() {
+      try {
+        const data = await loadData();
+        render(data);
+      } catch (e) {
+        document.getElementById("msg").innerHTML =
+          '<p class="err">No se pudo cargar betfree_predictions.json. ¿Publicaste la carpeta docs/?</p>';
+        document.getElementById("updated").textContent = "Error de red";
+      }
+    }
+    document.getElementById("btn-refresh").addEventListener("click", refresh);
+    refresh();
+  </script>
+</body>
+</html>
