@@ -1,20 +1,251 @@
 {
   "schema": "betfree.pages_predictions.v2",
-  "generated_at_utc": "2026-05-21T16:26:02.838294+00:00",
+  "generated_at_utc": "2026-05-25T16:01:17.230634+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
-      "event_id": 401842777,
-      "local_date_iso": "2026-05-21",
-      "slug": "swe.1",
-      "home_team": "IF Elfsborg",
-      "away_team": "Mjällby AIF",
+      "event_id": 763125,
+      "local_date_iso": "2026-05-25",
+      "slug": "irl.1",
+      "home_team": "Bohemians",
+      "away_team": "Shamrock Rovers",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
+      "ts_utc": "2026-05-25 16:01:16",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Bohemians"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Shamrock Rovers"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-05-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 763126,
+      "local_date_iso": "2026-05-25",
+      "slug": "irl.1",
+      "home_team": "Derry City",
+      "away_team": "Shelbourne",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-05-25 16:01:16",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Derry City"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Shelbourne"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-05-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401841129,
+      "local_date_iso": "2026-05-25",
+      "slug": "bra.1",
+      "home_team": "Coritiba",
+      "away_team": "Bahia",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-05-25 16:01:16",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Coritiba"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Bahia"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-05-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401842723,
+      "local_date_iso": "2026-05-25",
+      "slug": "swe.1",
+      "home_team": "IF Elfsborg",
+      "away_team": "BK Häcken",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-05-25 16:01:16",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -24,6 +255,83 @@
           "gf_avg": null,
           "ga_avg": null,
           "name": "IF Elfsborg"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "BK Häcken"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-05-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401842727,
+      "local_date_iso": "2026-05-25",
+      "slug": "swe.1",
+      "home_team": "IFK Göteborg",
+      "away_team": "Mjällby AIF",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-05-25 16:01:16",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "IFK Göteborg"
         },
         "away": {
           "n_matches": 0,
@@ -47,7 +355,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
+          "ranking_date_iso": "2026-05-25",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -81,17 +389,17 @@
       }
     },
     {
-      "event_id": 401865439,
-      "local_date_iso": "2026-05-21",
-      "slug": "conmebol.sudamericana",
-      "home_team": "Atlético-MG",
-      "away_team": "Cienciano del Cusco",
+      "event_id": 401843350,
+      "local_date_iso": "2026-05-25",
+      "slug": "nor.1",
+      "home_team": "KFUM Oslo",
+      "away_team": "Rosenborg",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
+      "ts_utc": "2026-05-25 16:01:16",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -100,13 +408,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Atlético-MG"
+          "name": "KFUM Oslo"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Cienciano del Cusco"
+          "name": "Rosenborg"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -124,161 +432,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": 1846.8,
-            "rank": 14,
-            "matched_as": "Atletico",
-            "country": "ESP",
-            "match": "fuzzy"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401865441,
-      "local_date_iso": "2026-05-21",
-      "slug": "conmebol.sudamericana",
-      "home_team": "Academia Puerto Cabello",
-      "away_team": "Juventud",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Academia Puerto Cabello"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Juventud"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": 1775.2,
-            "rank": 29,
-            "matched_as": "Juventus",
-            "country": "ITA",
-            "match": "fuzzy"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401865442,
-      "local_date_iso": "2026-05-21",
-      "slug": "conmebol.sudamericana",
-      "home_team": "Grêmio",
-      "away_team": "Palestino",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Grêmio"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Palestino"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
+          "ranking_date_iso": "2026-05-25",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -312,17 +466,17 @@
       }
     },
     {
-      "event_id": 401865445,
-      "local_date_iso": "2026-05-21",
-      "slug": "conmebol.sudamericana",
-      "home_team": "River Plate",
-      "away_team": "Red Bull Bragantino",
+      "event_id": 401843352,
+      "local_date_iso": "2026-05-25",
+      "slug": "nor.1",
+      "home_team": "Sandefjord",
+      "away_team": "Fredrikstad",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
+      "ts_utc": "2026-05-25 16:01:16",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -331,13 +485,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "River Plate"
+          "name": "Sandefjord"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Red Bull Bragantino"
+          "name": "Fredrikstad"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -355,7 +509,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
+          "ranking_date_iso": "2026-05-25",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -389,17 +543,17 @@
       }
     },
     {
-      "event_id": 401865450,
-      "local_date_iso": "2026-05-21",
-      "slug": "conmebol.sudamericana",
-      "home_team": "Independiente Petrolero",
-      "away_team": "Botafogo",
+      "event_id": 401843353,
+      "local_date_iso": "2026-05-25",
+      "slug": "nor.1",
+      "home_team": "Sarpsborg FK",
+      "away_team": "Molde",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
+      "ts_utc": "2026-05-25 16:01:16",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -408,13 +562,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Independiente Petrolero"
+          "name": "Sarpsborg FK"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Botafogo"
+          "name": "Molde"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -432,7 +586,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
+          "ranking_date_iso": "2026-05-25",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -466,17 +620,17 @@
       }
     },
     {
-      "event_id": 401865534,
-      "local_date_iso": "2026-05-21",
-      "slug": "conmebol.libertadores",
-      "home_team": "Flamengo",
-      "away_team": "Estudiantes de La Plata",
+      "event_id": 401843354,
+      "local_date_iso": "2026-05-25",
+      "slug": "nor.1",
+      "home_team": "Hamarkameratene",
+      "away_team": "Lillestrom",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
+      "ts_utc": "2026-05-25 16:01:16",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -485,13 +639,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Flamengo"
+          "name": "Hamarkameratene"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Estudiantes de La Plata"
+          "name": "Lillestrom"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -509,7 +663,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
+          "ranking_date_iso": "2026-05-25",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -543,17 +697,17 @@
       }
     },
     {
-      "event_id": 401865535,
-      "local_date_iso": "2026-05-21",
-      "slug": "conmebol.libertadores",
-      "home_team": "Deportivo La Guaira",
-      "away_team": "Independiente Rivadavia",
+      "event_id": 401843356,
+      "local_date_iso": "2026-05-25",
+      "slug": "nor.1",
+      "home_team": "IK Start",
+      "away_team": "Vålerenga",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
+      "ts_utc": "2026-05-25 16:01:16",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -562,13 +716,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Deportivo La Guaira"
+          "name": "IK Start"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Independiente Rivadavia"
+          "name": "Vålerenga"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -586,7 +740,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
+          "ranking_date_iso": "2026-05-25",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -620,17 +774,17 @@
       }
     },
     {
-      "event_id": 401865536,
-      "local_date_iso": "2026-05-21",
-      "slug": "conmebol.libertadores",
-      "home_team": "Cusco FC",
-      "away_team": "Independiente Medellín",
+      "event_id": 401843357,
+      "local_date_iso": "2026-05-25",
+      "slug": "nor.1",
+      "home_team": "Tromso",
+      "away_team": "Aalesund",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
+      "ts_utc": "2026-05-25 16:01:16",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -639,13 +793,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Cusco FC"
+          "name": "Tromso"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Independiente Medellín"
+          "name": "Aalesund"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -663,7 +817,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
+          "ranking_date_iso": "2026-05-25",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -697,17 +851,17 @@
       }
     },
     {
-      "event_id": 401865544,
-      "local_date_iso": "2026-05-21",
-      "slug": "conmebol.libertadores",
-      "home_team": "Palmeiras",
-      "away_team": "Cerro Porteño",
+      "event_id": 401857513,
+      "local_date_iso": "2026-05-25",
+      "slug": "per.1",
+      "home_team": "Comerciantes Unidos",
+      "away_team": "Deportivo Garcilaso",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
+      "ts_utc": "2026-05-25 16:01:16",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -716,13 +870,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Palmeiras"
+          "name": "Comerciantes Unidos"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Cerro Porteño"
+          "name": "Deportivo Garcilaso"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -740,7 +894,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
+          "ranking_date_iso": "2026-05-25",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -774,17 +928,17 @@
       }
     },
     {
-      "event_id": 401865546,
-      "local_date_iso": "2026-05-21",
-      "slug": "conmebol.libertadores",
-      "home_team": "Liga de Quito",
-      "away_team": "Lanús",
+      "event_id": 401873417,
+      "local_date_iso": "2026-05-25",
+      "slug": "aut.1",
+      "home_team": "Rapid Vienna",
+      "away_team": "SV Josko Ried",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
+      "ts_utc": "2026-05-25 16:01:16",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -793,13 +947,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Liga de Quito"
+          "name": "Rapid Vienna"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Lanús"
+          "name": "SV Josko Ried"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -817,1085 +971,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401865547,
-      "local_date_iso": "2026-05-21",
-      "slug": "conmebol.libertadores",
-      "home_team": "Atlético Junior",
-      "away_team": "Sporting Cristal",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Atlético Junior"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Sporting Cristal"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401866324,
-      "local_date_iso": "2026-05-21",
-      "slug": "bel.1",
-      "home_team": "KV Mechelen",
-      "away_team": "Club Brugge",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "KV Mechelen"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Club Brugge"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401866325,
-      "local_date_iso": "2026-05-21",
-      "slug": "bel.1",
-      "home_team": "KAA Gent",
-      "away_team": "Union St.-Gilloise",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "KAA Gent"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Union St.-Gilloise"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401866326,
-      "local_date_iso": "2026-05-21",
-      "slug": "bel.1",
-      "home_team": "Anderlecht",
-      "away_team": "Sint-Truidense",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Anderlecht"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Sint-Truidense"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401866584,
-      "local_date_iso": "2026-05-21",
-      "slug": "gre.1",
-      "home_team": "Atromitos",
-      "away_team": "Panserraikos FC",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "G1",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Atromitos"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Panserraikos FC"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": "GRE",
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición G1)."
-        }
-      }
-    },
-    {
-      "event_id": 401866585,
-      "local_date_iso": "2026-05-21",
-      "slug": "gre.1",
-      "home_team": "Panetolikos",
-      "away_team": "Asteras Tripoli",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "G1",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Panetolikos"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Asteras Tripoli"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": "GRE",
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición G1)."
-        }
-      }
-    },
-    {
-      "event_id": 401866586,
-      "local_date_iso": "2026-05-21",
-      "slug": "gre.1",
-      "home_team": "Kifisia",
-      "away_team": "Larissa FC",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "G1",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Kifisia"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Larissa FC"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": "GRE",
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": 1628.4,
-            "rank": 92,
-            "matched_as": "Paris FC",
-            "country": "FRA",
-            "match": "fuzzy"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición G1)."
-        }
-      }
-    },
-    {
-      "event_id": 401871560,
-      "local_date_iso": "2026-05-21",
-      "slug": "col.copa",
-      "home_team": "Bucaramanga",
-      "away_team": "Boca Juniors de Cali",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Bucaramanga"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Boca Juniors de Cali"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401871561,
-      "local_date_iso": "2026-05-21",
-      "slug": "col.copa",
-      "home_team": "Deportivo Cali",
-      "away_team": "Alianza FC",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Deportivo Cali"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Alianza FC"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401871562,
-      "local_date_iso": "2026-05-21",
-      "slug": "col.copa",
-      "home_team": "Águilas Doradas",
-      "away_team": "Deportivo Pereira",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Águilas Doradas"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Deportivo Pereira"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401871565,
-      "local_date_iso": "2026-05-21",
-      "slug": "col.copa",
-      "home_team": "Jaguares de Córdoba",
-      "away_team": "Independiente Yumbo",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Jaguares de Córdoba"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Independiente Yumbo"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401873225,
-      "local_date_iso": "2026-05-21",
-      "slug": "ned.1",
-      "home_team": "Ajax Amsterdam",
-      "away_team": "FC Groningen",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "N1",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Ajax Amsterdam"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "FC Groningen"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": "NED",
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición N1)."
-        }
-      }
-    },
-    {
-      "event_id": 401873226,
-      "local_date_iso": "2026-05-21",
-      "slug": "ned.1",
-      "home_team": "FC Utrecht",
-      "away_team": "Heerenveen",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "N1",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "FC Utrecht"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Heerenveen"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
-          "hint_country": "NED",
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición N1)."
-        }
-      }
-    },
-    {
-      "event_id": 401873418,
-      "local_date_iso": "2026-05-21",
-      "slug": "den.1",
-      "home_team": "Brøndby IF",
-      "away_team": "F.C. København",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-05-21 16:26:02",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Brøndby IF"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "F.C. København"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-05-21",
+          "ranking_date_iso": "2026-05-25",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
