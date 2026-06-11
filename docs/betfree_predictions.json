@@ -1,20 +1,20 @@
 {
   "schema": "betfree.pages_predictions.v2",
-  "generated_at_utc": "2026-06-08T16:57:34.742966+00:00",
+  "generated_at_utc": "2026-06-11T17:04:27.874066+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
-      "event_id": 401873659,
-      "local_date_iso": "2026-06-08",
-      "slug": "col.1",
-      "home_team": "Atlético Nacional",
-      "away_team": "Atlético Junior",
+      "event_id": 760415,
+      "local_date_iso": "2026-06-11",
+      "slug": "fifa.world",
+      "home_team": "Mexico",
+      "away_team": "South Africa",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-08 16:57:34",
+      "ts_utc": "2026-06-11 17:04:27",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -23,13 +23,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Atlético Nacional"
+          "name": "Mexico"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Atlético Junior"
+          "name": "South Africa"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -44,6 +44,26 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-06-11",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
@@ -61,46 +81,66 @@
       }
     },
     {
-      "event_id": 401874024,
-      "local_date_iso": "2026-06-08",
-      "slug": "uru.1",
-      "home_team": "Liverpool",
-      "away_team": "Cerro Largo",
-      "p_home": 0.5622,
-      "p_draw": 0.2315,
-      "p_away": 0.2064,
+      "event_id": 2391728,
+      "local_date_iso": "2026-06-11",
+      "slug": "tsdb.4429",
+      "home_team": "Mexico",
+      "away_team": "South Africa",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-08 16:57:34",
+      "ts_utc": "2026-06-11 17:04:27",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
         "hist_competition_hint": null,
         "home": {
-          "n_matches": 5,
-          "gf_avg": 2.2,
-          "ga_avg": 2.0,
-          "name": "Liverpool"
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Mexico"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Cerro Largo"
+          "name": "South Africa"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.5622,
-          "p_draw": 0.2315,
-          "p_away": 0.2064,
-          "x_goals_home": 1.789,
-          "x_goals_away": 0.987,
-          "yellow_cards_home": 2.59,
-          "yellow_cards_away": 1.46,
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
           "yellow_cards_total": 4.05,
-          "corners_home": 5.16,
-          "corners_away": 4.34,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-06-11",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
