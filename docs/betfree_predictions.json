@@ -1,20 +1,20 @@
 {
   "schema": "betfree.pages_predictions.v2",
-  "generated_at_utc": "2026-06-22T17:48:54.948497+00:00",
+  "generated_at_utc": "2026-06-25T15:49:10.118520+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
-      "event_id": 760452,
-      "local_date_iso": "2026-06-22",
+      "event_id": 760466,
+      "local_date_iso": "2026-06-25",
       "slug": "fifa.world",
-      "home_team": "New Zealand",
-      "away_team": "Egypt",
+      "home_team": "South Africa",
+      "away_team": "South Korea",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-22 17:48:54",
+      "ts_utc": "2026-06-25 15:49:09",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -23,13 +23,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "New Zealand"
+          "name": "South Africa"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Egypt"
+          "name": "South Korea"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -44,6 +44,26 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-06-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
@@ -61,17 +81,17 @@
       }
     },
     {
-      "event_id": 760456,
-      "local_date_iso": "2026-06-22",
+      "event_id": 760467,
+      "local_date_iso": "2026-06-25",
       "slug": "fifa.world",
-      "home_team": "Argentina",
-      "away_team": "Austria",
+      "home_team": "Czechia",
+      "away_team": "Mexico",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-22 17:48:54",
+      "ts_utc": "2026-06-25 15:49:09",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -80,13 +100,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Argentina"
+          "name": "Czechia"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Austria"
+          "name": "Mexico"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -101,6 +121,26 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-06-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
@@ -118,17 +158,17 @@
       }
     },
     {
-      "event_id": 760457,
-      "local_date_iso": "2026-06-22",
+      "event_id": 760468,
+      "local_date_iso": "2026-06-25",
       "slug": "fifa.world",
-      "home_team": "France",
-      "away_team": "Iraq",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-22 17:48:54",
+      "ts_utc": "2026-06-25 15:49:09",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -137,13 +177,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "France"
+          "name": "Ecuador"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Iraq"
+          "name": "Germany"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -158,6 +198,26 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-06-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
@@ -175,17 +235,17 @@
       }
     },
     {
-      "event_id": 763142,
-      "local_date_iso": "2026-06-22",
-      "slug": "irl.1",
-      "home_team": "Shelbourne",
-      "away_team": "Bohemians",
+      "event_id": 760471,
+      "local_date_iso": "2026-06-25",
+      "slug": "fifa.world",
+      "home_team": "Japan",
+      "away_team": "Sweden",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-22 17:48:54",
+      "ts_utc": "2026-06-25 15:49:09",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -194,13 +254,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Shelbourne"
+          "name": "Japan"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Bohemians"
+          "name": "Sweden"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -215,6 +275,26 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-06-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
@@ -232,17 +312,17 @@
       }
     },
     {
-      "event_id": 763143,
-      "local_date_iso": "2026-06-22",
-      "slug": "irl.1",
-      "home_team": "Shamrock Rovers",
-      "away_team": "Derry City",
+      "event_id": 760472,
+      "local_date_iso": "2026-06-25",
+      "slug": "fifa.world",
+      "home_team": "Tunisia",
+      "away_team": "Netherlands",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-22 17:48:54",
+      "ts_utc": "2026-06-25 15:49:09",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -251,13 +331,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Shamrock Rovers"
+          "name": "Tunisia"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Derry City"
+          "name": "Netherlands"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -272,6 +352,26 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-06-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
@@ -289,17 +389,94 @@
       }
     },
     {
-      "event_id": 2391755,
-      "local_date_iso": "2026-06-22",
+      "event_id": 760473,
+      "local_date_iso": "2026-06-25",
+      "slug": "fifa.world",
+      "home_team": "Curaçao",
+      "away_team": "Ivory Coast",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-06-25 15:49:09",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Curaçao"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Ivory Coast"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-06-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 2391766,
+      "local_date_iso": "2026-06-25",
       "slug": "tsdb.4429",
-      "home_team": "New Zealand",
-      "away_team": "Egypt",
+      "home_team": "South Africa",
+      "away_team": "South Korea",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-22 17:48:54",
+      "ts_utc": "2026-06-25 15:49:09",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -308,13 +485,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "New Zealand"
+          "name": "South Africa"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Egypt"
+          "name": "South Korea"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -329,6 +506,26 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-06-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
@@ -346,17 +543,17 @@
       }
     },
     {
-      "event_id": 2391758,
-      "local_date_iso": "2026-06-22",
+      "event_id": 2391768,
+      "local_date_iso": "2026-06-25",
       "slug": "tsdb.4429",
-      "home_team": "Argentina",
-      "away_team": "Austria",
+      "home_team": "Curaçao",
+      "away_team": "Ivory Coast",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-22 17:48:54",
+      "ts_utc": "2026-06-25 15:49:09",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -365,13 +562,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Argentina"
+          "name": "Curaçao"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Austria"
+          "name": "Ivory Coast"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -386,6 +583,26 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-06-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
@@ -403,17 +620,17 @@
       }
     },
     {
-      "event_id": 401873327,
-      "local_date_iso": "2026-06-22",
-      "slug": "bol.1",
-      "home_team": "Oriente Petrolero",
-      "away_team": "Nacional Potosí",
+      "event_id": 2391769,
+      "local_date_iso": "2026-06-25",
+      "slug": "tsdb.4429",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-22 17:48:54",
+      "ts_utc": "2026-06-25 15:49:09",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -422,13 +639,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Oriente Petrolero"
+          "name": "Ecuador"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Nacional Potosí"
+          "name": "Germany"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -443,6 +660,26 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-06-25",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
