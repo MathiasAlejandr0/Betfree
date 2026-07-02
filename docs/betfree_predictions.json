@@ -1,20 +1,20 @@
 {
   "schema": "betfree.pages_predictions.v2",
-  "generated_at_utc": "2026-06-29T16:46:45.334150+00:00",
+  "generated_at_utc": "2026-07-02T15:27:44.618638+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
-      "event_id": 760487,
-      "local_date_iso": "2026-06-29",
+      "event_id": 760494,
+      "local_date_iso": "2026-07-02",
       "slug": "fifa.world",
-      "home_team": "Brazil",
-      "away_team": "Japan",
+      "home_team": "United States",
+      "away_team": "Bosnia-Herzegovina",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-29 16:46:45",
+      "ts_utc": "2026-07-02 15:27:44",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -23,13 +23,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Brazil"
+          "name": "United States"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Japan"
+          "name": "Bosnia-Herzegovina"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -44,6 +44,26 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-07-02",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
@@ -61,17 +81,17 @@
       }
     },
     {
-      "event_id": 760489,
-      "local_date_iso": "2026-06-29",
+      "event_id": 760496,
+      "local_date_iso": "2026-07-02",
       "slug": "fifa.world",
-      "home_team": "Germany",
-      "away_team": "Paraguay",
+      "home_team": "Portugal",
+      "away_team": "Croatia",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-06-29 16:46:45",
+      "ts_utc": "2026-07-02 15:27:44",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -80,13 +100,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Germany"
+          "name": "Portugal"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Paraguay"
+          "name": "Croatia"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -101,6 +121,103 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-07-02",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 760497,
+      "local_date_iso": "2026-07-02",
+      "slug": "fifa.world",
+      "home_team": "Spain",
+      "away_team": "Austria",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-07-02 15:27:44",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Spain"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Austria"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-07-02",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
