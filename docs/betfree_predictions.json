@@ -1,20 +1,20 @@
 {
   "schema": "betfree.pages_predictions.v2",
-  "generated_at_utc": "2026-07-02T15:27:44.618638+00:00",
+  "generated_at_utc": "2026-07-06T16:31:06.267858+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
-      "event_id": 760494,
-      "local_date_iso": "2026-07-02",
+      "event_id": 760505,
+      "local_date_iso": "2026-07-06",
       "slug": "fifa.world",
-      "home_team": "United States",
-      "away_team": "Bosnia-Herzegovina",
+      "home_team": "Mexico",
+      "away_team": "England",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-02 15:27:44",
+      "ts_utc": "2026-07-06 16:31:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -23,13 +23,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "United States"
+          "name": "Mexico"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Bosnia-Herzegovina"
+          "name": "England"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -44,26 +44,6 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-02",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
@@ -81,17 +61,17 @@
       }
     },
     {
-      "event_id": 760496,
-      "local_date_iso": "2026-07-02",
+      "event_id": 760506,
+      "local_date_iso": "2026-07-06",
       "slug": "fifa.world",
       "home_team": "Portugal",
-      "away_team": "Croatia",
+      "away_team": "Spain",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-02 15:27:44",
+      "ts_utc": "2026-07-06 16:31:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -106,7 +86,7 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Croatia"
+          "name": "Spain"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -121,26 +101,6 @@
           "corners_home": 4.8,
           "corners_away": 4.7,
           "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-02",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
@@ -158,17 +118,17 @@
       }
     },
     {
-      "event_id": 760497,
-      "local_date_iso": "2026-07-02",
-      "slug": "fifa.world",
-      "home_team": "Spain",
-      "away_team": "Austria",
+      "event_id": 401842740,
+      "local_date_iso": "2026-07-06",
+      "slug": "swe.1",
+      "home_team": "BK Häcken",
+      "away_team": "Djurgården",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-02 15:27:44",
+      "ts_utc": "2026-07-06 16:31:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -177,13 +137,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Spain"
+          "name": "BK Häcken"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Austria"
+          "name": "Djurgården"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -199,25 +159,119 @@
           "corners_away": 4.7,
           "corners_total": 9.5
         },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-02",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
           },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401842744,
+      "local_date_iso": "2026-07-06",
+      "slug": "swe.1",
+      "home_team": "IF Brommapojkarna",
+      "away_team": "GAIS",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-07-06 16:31:06",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "IF Brommapojkarna"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "GAIS"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401859600,
+      "local_date_iso": "2026-07-06",
+      "slug": "ecu.1",
+      "home_team": "Universidad Católica (Quito)",
+      "away_team": "Mushuc Runa",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-07-06 16:31:06",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Universidad Católica (Quito)"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Mushuc Runa"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
         },
         "h2h": {
           "schema": "betfree.pages_h2h.v1",
