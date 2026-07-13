@@ -1,20 +1,20 @@
 {
   "schema": "betfree.pages_predictions.v2",
-  "generated_at_utc": "2026-07-09T16:09:34.000045+00:00",
+  "generated_at_utc": "2026-07-13T15:51:16.625756+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
-      "event_id": 760510,
-      "local_date_iso": "2026-07-09",
-      "slug": "fifa.world",
-      "home_team": "France",
-      "away_team": "Morocco",
+      "event_id": 401842751,
+      "local_date_iso": "2026-07-13",
+      "slug": "swe.1",
+      "home_team": "Djurgården",
+      "away_team": "Halmstads BK",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-09 16:09:33",
+      "ts_utc": "2026-07-13 15:51:16",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -23,13 +23,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "France"
+          "name": "Djurgården"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Morocco"
+          "name": "Halmstads BK"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -47,7 +47,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-09",
+          "ranking_date_iso": "2026-07-13",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -81,17 +81,17 @@
       }
     },
     {
-      "event_id": 401867149,
-      "local_date_iso": "2026-07-09",
-      "slug": "bol.1",
-      "home_team": "Real Potosí",
-      "away_team": "ABB",
+      "event_id": 401872712,
+      "local_date_iso": "2026-07-13",
+      "slug": "uru.1",
+      "home_team": "Cerro Largo",
+      "away_team": "Defensor Sporting",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-09 16:09:33",
+      "ts_utc": "2026-07-13 15:51:16",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -100,13 +100,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Real Potosí"
+          "name": "Cerro Largo"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "ABB"
+          "name": "Defensor Sporting"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -124,7 +124,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-09",
+          "ranking_date_iso": "2026-07-13",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
