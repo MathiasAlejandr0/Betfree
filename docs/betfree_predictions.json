@@ -1,20 +1,20 @@
 {
   "schema": "betfree.pages_predictions.v2",
-  "generated_at_utc": "2026-07-27T15:52:16.294807+00:00",
+  "generated_at_utc": "2026-07-30T15:21:18.844832+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
-      "event_id": 401842766,
-      "local_date_iso": "2026-07-27",
-      "slug": "swe.1",
-      "home_team": "BK Häcken",
-      "away_team": "AIK",
+      "event_id": 401841172,
+      "local_date_iso": "2026-07-30",
+      "slug": "bra.1",
+      "home_team": "Vitória",
+      "away_team": "Palmeiras",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-27 15:52:15",
+      "ts_utc": "2026-07-30 15:21:18",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -23,13 +23,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "BK Häcken"
+          "name": "Vitória"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "AIK"
+          "name": "Palmeiras"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -47,7 +47,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-27",
+          "ranking_date_iso": "2026-07-30",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -81,17 +81,17 @@
       }
     },
     {
-      "event_id": 401850420,
-      "local_date_iso": "2026-07-27",
-      "slug": "chi.1",
-      "home_team": "Deportes Concepcion",
-      "away_team": "O'Higgins",
+      "event_id": 401841174,
+      "local_date_iso": "2026-07-30",
+      "slug": "bra.1",
+      "home_team": "Corinthians",
+      "away_team": "Athletico-PR",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-27 15:52:15",
+      "ts_utc": "2026-07-30 15:21:18",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -100,13 +100,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Deportes Concepcion"
+          "name": "Corinthians"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "O'Higgins"
+          "name": "Athletico-PR"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -124,7 +124,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-27",
+          "ranking_date_iso": "2026-07-30",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -135,165 +135,11 @@
             "match": "none"
           },
           "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401850602,
-      "local_date_iso": "2026-07-27",
-      "slug": "chi.1",
-      "home_team": "Unión La Calera",
-      "away_team": "Everton CD",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-27 15:52:15",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Unión La Calera"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Everton CD"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-27",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": 1803.4,
-            "rank": 22,
-            "matched_as": "Everton",
-            "country": "ENG",
-            "match": "fuzzy"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401859634,
-      "local_date_iso": "2026-07-27",
-      "slug": "ecu.1",
-      "home_team": "Barcelona SC",
-      "away_team": "Liga de Quito",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-27 15:52:15",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Barcelona SC"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Liga de Quito"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-27",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": 1951.6,
-            "rank": 4,
-            "matched_as": "Barcelona",
+            "rating": 1827.7,
+            "rank": 16,
+            "matched_as": "Atletico",
             "country": "ESP",
             "match": "fuzzy"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
           }
         },
         "h2h": {
@@ -312,17 +158,17 @@
       }
     },
     {
-      "event_id": 401859636,
-      "local_date_iso": "2026-07-27",
-      "slug": "ecu.1",
-      "home_team": "Mushuc Runa",
-      "away_team": "Libertad (Ecuador)",
+      "event_id": 401841177,
+      "local_date_iso": "2026-07-30",
+      "slug": "bra.1",
+      "home_team": "Fluminense",
+      "away_team": "Bahia",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-27 15:52:15",
+      "ts_utc": "2026-07-30 15:21:18",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -331,13 +177,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Mushuc Runa"
+          "name": "Fluminense"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Libertad (Ecuador)"
+          "name": "Bahia"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -355,7 +201,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-27",
+          "ranking_date_iso": "2026-07-30",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -389,17 +235,17 @@
       }
     },
     {
-      "event_id": 401859637,
-      "local_date_iso": "2026-07-27",
-      "slug": "ecu.1",
-      "home_team": "Guayaquil City FC",
-      "away_team": "Universidad Católica (Quito)",
+      "event_id": 401841451,
+      "local_date_iso": "2026-07-30",
+      "slug": "arg.1",
+      "home_team": "Talleres (Córdoba)",
+      "away_team": "Vélez Sarsfield",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-27 15:52:15",
+      "ts_utc": "2026-07-30 15:21:18",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -408,13 +254,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Guayaquil City FC"
+          "name": "Talleres (Córdoba)"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Universidad Católica (Quito)"
+          "name": "Vélez Sarsfield"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -432,7 +278,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-27",
+          "ranking_date_iso": "2026-07-30",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -466,17 +312,17 @@
       }
     },
     {
-      "event_id": 401873315,
-      "local_date_iso": "2026-07-27",
-      "slug": "bol.1",
-      "home_team": "GV San José",
-      "away_team": "Universitario de Vinto",
+      "event_id": 401841454,
+      "local_date_iso": "2026-07-30",
+      "slug": "arg.1",
+      "home_team": "Instituto (Córdoba)",
+      "away_team": "Platense",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-27 15:52:15",
+      "ts_utc": "2026-07-30 15:21:18",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -485,13 +331,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "GV San José"
+          "name": "Instituto (Córdoba)"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Universitario de Vinto"
+          "name": "Platense"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -509,7 +355,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-27",
+          "ranking_date_iso": "2026-07-30",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -543,17 +389,17 @@
       }
     },
     {
-      "event_id": 401873927,
-      "local_date_iso": "2026-07-27",
-      "slug": "nor.1",
-      "home_team": "Rosenborg",
-      "away_team": "Fredrikstad",
+      "event_id": 401841455,
+      "local_date_iso": "2026-07-30",
+      "slug": "arg.1",
+      "home_team": "Independiente Rivadavia",
+      "away_team": "Huracán",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-27 15:52:15",
+      "ts_utc": "2026-07-30 15:21:18",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -562,13 +408,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Rosenborg"
+          "name": "Independiente Rivadavia"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Fredrikstad"
+          "name": "Huracán"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -586,7 +432,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-27",
+          "ranking_date_iso": "2026-07-30",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -620,17 +466,17 @@
       }
     },
     {
-      "event_id": 401874475,
-      "local_date_iso": "2026-07-27",
-      "slug": "den.1",
-      "home_team": "Randers FC",
-      "away_team": "Silkeborg IF",
+      "event_id": 401871776,
+      "local_date_iso": "2026-07-30",
+      "slug": "col.copa",
+      "home_team": "Envigado FC",
+      "away_team": "Once Caldas",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-27 15:52:15",
+      "ts_utc": "2026-07-30 15:21:18",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -639,91 +485,14 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Randers FC"
+          "name": "Envigado FC"
         },
         "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Silkeborg IF"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "club_elo": {
-          "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-27",
-          "hint_country": null,
-          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
-          "home": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          },
-          "away": {
-            "rating": null,
-            "rank": null,
-            "matched_as": null,
-            "country": null,
-            "match": "none"
-          }
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401878005,
-      "local_date_iso": "2026-07-27",
-      "slug": "col.1",
-      "home_team": "Once Caldas",
-      "away_team": "Cúcuta Deportivo",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-27 15:52:15",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
           "name": "Once Caldas"
         },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Cúcuta Deportivo"
-        },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
           "p_home": 0.3975,
@@ -740,7 +509,7 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-27",
+          "ranking_date_iso": "2026-07-30",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
@@ -774,17 +543,17 @@
       }
     },
     {
-      "event_id": 401878175,
-      "local_date_iso": "2026-07-27",
-      "slug": "per.1",
-      "home_team": "Deportivo Garcilaso",
-      "away_team": "FC Cajamarca",
+      "event_id": 401871778,
+      "local_date_iso": "2026-07-30",
+      "slug": "col.copa",
+      "home_team": "Real Cartagena",
+      "away_team": "América de Cali",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-07-27 15:52:15",
+      "ts_utc": "2026-07-30 15:21:18",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -793,13 +562,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Deportivo Garcilaso"
+          "name": "Real Cartagena"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "FC Cajamarca"
+          "name": "América de Cali"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -817,7 +586,392 @@
         },
         "club_elo": {
           "schema": "betfree.club_elo_snapshot.v1",
-          "ranking_date_iso": "2026-07-27",
+          "ranking_date_iso": "2026-07-30",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401874151,
+      "local_date_iso": "2026-07-30",
+      "slug": "conmebol.sudamericana",
+      "home_team": "Red Bull Bragantino",
+      "away_team": "Sporting Cristal",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-07-30 15:21:18",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Red Bull Bragantino"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Sporting Cristal"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-07-30",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401874158,
+      "local_date_iso": "2026-07-30",
+      "slug": "conmebol.sudamericana",
+      "home_team": "Cienciano del Cusco",
+      "away_team": "Lanús",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-07-30 15:21:18",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Cienciano del Cusco"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Lanús"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-07-30",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401874159,
+      "local_date_iso": "2026-07-30",
+      "slug": "conmebol.sudamericana",
+      "home_team": "Grêmio",
+      "away_team": "Bolívar",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-07-30 15:21:18",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Grêmio"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Bolívar"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-07-30",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401888631,
+      "local_date_iso": "2026-07-30",
+      "slug": "par.1",
+      "home_team": "Libertad",
+      "away_team": "Deportivo Recoleta",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-07-30 15:21:18",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Libertad"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Deportivo Recoleta"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-07-30",
+          "hint_country": null,
+          "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
+          "home": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          },
+          "away": {
+            "rating": null,
+            "rank": null,
+            "matched_as": null,
+            "country": null,
+            "match": "none"
+          }
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401888681,
+      "local_date_iso": "2026-07-30",
+      "slug": "par.1",
+      "home_team": "Sportivo San Lorenzo",
+      "away_team": "Guaraní",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-07-30 15:21:18",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Sportivo San Lorenzo"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Guaraní"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "club_elo": {
+          "schema": "betfree.club_elo_snapshot.v1",
+          "ranking_date_iso": "2026-07-30",
           "hint_country": null,
           "source_note_es": "Ratings Elo públicos api.clubelo.com para clubes europeos (y sus ligas típicas). Nombres se cruzan con heurísticas; puede faltar Copa/Sudamericana.",
           "home": {
