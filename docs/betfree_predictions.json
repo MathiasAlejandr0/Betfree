@@ -1,20 +1,20 @@
 {
   "schema": "betfree.pages_predictions.v2",
-  "generated_at_utc": "2026-10-19T19:16:45.731627+00:00",
+  "generated_at_utc": "2026-10-22T18:00:22.175839+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
-      "event_id": 401841272,
-      "local_date_iso": "2026-10-19",
-      "slug": "bra.1",
-      "home_team": "Corinthians",
-      "away_team": "Vitória",
+      "event_id": 401877844,
+      "local_date_iso": "2026-10-22",
+      "slug": "col.1",
+      "home_team": "Independiente Santa Fe",
+      "away_team": "Jaguares de Córdoba",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
+      "ts_utc": "2026-10-22 18:00:21",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -23,13 +23,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Corinthians"
+          "name": "Independiente Santa Fe"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Vitória"
+          "name": "Jaguares de Córdoba"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -61,17 +61,17 @@
       }
     },
     {
-      "event_id": 401841617,
-      "local_date_iso": "2026-10-19",
-      "slug": "arg.1",
-      "home_team": "Sarmiento (Junín)",
-      "away_team": "Barracas Central",
+      "event_id": 401912520,
+      "local_date_iso": "2026-10-22",
+      "slug": "conmebol.libertadores",
+      "home_team": "Palmeiras",
+      "away_team": "Fluminense",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
+      "ts_utc": "2026-10-22 18:00:21",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -80,13 +80,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Sarmiento (Junín)"
+          "name": "Palmeiras"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Barracas Central"
+          "name": "Fluminense"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -118,17 +118,17 @@
       }
     },
     {
-      "event_id": 401841620,
-      "local_date_iso": "2026-10-19",
-      "slug": "arg.1",
-      "home_team": "Newell's Old Boys",
-      "away_team": "Central Córdoba (Santiago del Estero)",
+      "event_id": 401915539,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Viktoria Plzen",
+      "away_team": "Levski Sofia",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
+      "ts_utc": "2026-10-22 18:00:21",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -137,13 +137,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Newell's Old Boys"
+          "name": "Viktoria Plzen"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Central Córdoba (Santiago del Estero)"
+          "name": "Levski Sofia"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -175,17 +175,17 @@
       }
     },
     {
-      "event_id": 401842846,
-      "local_date_iso": "2026-10-19",
-      "slug": "swe.1",
-      "home_team": "Degerfors IF",
-      "away_team": "Kalmar FF",
+      "event_id": 401915540,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Lillestrom",
+      "away_team": "Real Sociedad",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
+      "ts_utc": "2026-10-22 18:00:21",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -194,13 +194,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Degerfors IF"
+          "name": "Lillestrom"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Kalmar FF"
+          "name": "Real Sociedad"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -232,17 +232,17 @@
       }
     },
     {
-      "event_id": 401874524,
-      "local_date_iso": "2026-10-19",
-      "slug": "den.1",
-      "home_team": "Viborg FF",
-      "away_team": "FC Midtjylland",
+      "event_id": 401915541,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "NK Celje",
+      "away_team": "RB Salzburg",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
+      "ts_utc": "2026-10-22 18:00:21",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -251,14 +251,1268 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Viborg FF"
+          "name": "NK Celje"
         },
         "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "RB Salzburg"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915542,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Jagiellonia Bialystok",
+      "away_team": "Anderlecht",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Jagiellonia Bialystok"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Anderlecht"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915543,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "TSG Hoffenheim",
+      "away_team": "Lyon",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "TSG Hoffenheim"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Lyon"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915544,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Omonia Nicosia",
+      "away_team": "Benfica",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Omonia Nicosia"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Benfica"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915545,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Union St.-Gilloise",
+      "away_team": "Hapoel Be'er",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Union St.-Gilloise"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Hapoel Be'er"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915546,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Lech Poznan",
+      "away_team": "Sunderland",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Lech Poznan"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Sunderland"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915547,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Juventus",
+      "away_team": "Stade Rennais",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Juventus"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Stade Rennais"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915548,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Ararat-Armenia",
+      "away_team": "AZ Alkmaar",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Ararat-Armenia"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "AZ Alkmaar"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915552,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "AFC Bournemouth",
+      "away_team": "AC Milan",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "AFC Bournemouth"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "AC Milan"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915553,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Besiktas",
+      "away_team": "Crystal Palace",
+      "p_home": 0.3292,
+      "p_draw": 0.2527,
+      "p_away": 0.4182,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Besiktas"
+        },
+        "away": {
+          "n_matches": 5,
+          "gf_avg": 2.0,
+          "ga_avg": 1.2,
+          "name": "Crystal Palace"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3292,
+          "p_draw": 0.2527,
+          "p_away": 0.4182,
+          "x_goals_home": 1.29,
+          "x_goals_away": 1.486,
+          "yellow_cards_home": 1.88,
+          "yellow_cards_away": 2.17,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.65,
+          "corners_away": 4.85,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915554,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Olympiacos",
+      "away_team": "Sparta Prague",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Olympiacos"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Sparta Prague"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915555,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Celtic",
+      "away_team": "Celta Vigo",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Celtic"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Celta Vigo"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915556,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Dinamo Zagreb",
+      "away_team": "NEC Nijmegen",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Dinamo Zagreb"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "NEC Nijmegen"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915557,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "SK Sturm Graz",
+      "away_team": "Marseille",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "SK Sturm Graz"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Marseille"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915558,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "Ferencvaros",
+      "away_team": "Torreense",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Ferencvaros"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Torreense"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915559,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa",
+      "home_team": "OFI Crete",
+      "away_team": "Bayer Leverkusen",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "OFI Crete"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Bayer Leverkusen"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915743,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Borac Banja Luka",
+      "away_team": "KuPS Kuopio",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Borac Banja Luka"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "KuPS Kuopio"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915744,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "AGF",
+      "away_team": "Egnatia",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "AGF"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Egnatia"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915745,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Trabzonspor",
+      "away_team": "Heart of Midlothian",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Trabzonspor"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Heart of Midlothian"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915832,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Braga",
+      "away_team": "KAA Gent",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Braga"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "KAA Gent"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915833,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Lincoln Red Imps",
+      "away_team": "FC Twente",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Lincoln Red Imps"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "FC Twente"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915834,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "FC Thun",
+      "away_team": "Hajduk Split",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "FC Thun"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Hajduk Split"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915835,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "FC Midtjylland",
+      "away_team": "Sint-Truidense",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
           "name": "FC Midtjylland"
         },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Sint-Truidense"
+        },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
           "p_home": 0.3975,
@@ -289,131 +1543,17 @@
       }
     },
     {
-      "event_id": 401874762,
-      "local_date_iso": "2026-10-19",
-      "slug": "ita.1",
-      "home_team": "Monza",
-      "away_team": "Cagliari",
+      "event_id": 401915836,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "AS Monaco",
+      "away_team": "SC Freiburg",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "I1",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Monza"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Cagliari"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición I1)."
-        }
-      }
-    },
-    {
-      "event_id": 401874784,
-      "local_date_iso": "2026-10-19",
-      "slug": "ita.1",
-      "home_team": "Parma",
-      "away_team": "Torino",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "I1",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Parma"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Torino"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición I1)."
-        }
-      }
-    },
-    {
-      "event_id": 401877905,
-      "local_date_iso": "2026-10-19",
-      "slug": "col.1",
-      "home_team": "Deportivo Cali",
-      "away_team": "Atlético Junior",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
+      "ts_utc": "2026-10-22 18:00:21",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -422,13 +1562,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Deportivo Cali"
+          "name": "AS Monaco"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Atlético Junior"
+          "name": "SC Freiburg"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -460,74 +1600,17 @@
       }
     },
     {
-      "event_id": 401879257,
-      "local_date_iso": "2026-10-19",
-      "slug": "eng.1",
-      "home_team": "Tottenham Hotspur",
-      "away_team": "Coventry City",
-      "p_home": 0.4022,
-      "p_draw": 0.2457,
-      "p_away": 0.3521,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "E0",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Tottenham Hotspur"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Coventry City"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.4022,
-          "p_draw": 0.2457,
-          "p_away": 0.3521,
-          "x_goals_home": 1.524,
-          "x_goals_away": 1.411,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición E0)."
-        }
-      }
-    },
-    {
-      "event_id": 401879833,
-      "local_date_iso": "2026-10-19",
-      "slug": "rus.1",
-      "home_team": "Rodina Moscow",
-      "away_team": "Gazovik Orenburg",
+      "event_id": 401915837,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Ajax Amsterdam",
+      "away_team": "Atalanta",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
+      "ts_utc": "2026-10-22 18:00:21",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -536,13 +1619,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Rodina Moscow"
+          "name": "Ajax Amsterdam"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Gazovik Orenburg"
+          "name": "Atalanta"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -574,21 +1657,135 @@
       }
     },
     {
-      "event_id": 401882842,
-      "local_date_iso": "2026-10-19",
-      "slug": "esp.1",
+      "event_id": 401915838,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Pafos",
+      "away_team": "Riga FC",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Pafos"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Riga FC"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915839,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Inter D'Escaldes",
+      "away_team": "CSU Craiova",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Inter D'Escaldes"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "CSU Craiova"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915840,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
       "home_team": "Getafe",
-      "away_team": "Rayo Vallecano",
-      "p_home": 0.2814,
-      "p_draw": 0.257,
-      "p_away": 0.4616,
+      "away_team": "FC Lugano",
+      "p_home": 0.283,
+      "p_draw": 0.248,
+      "p_away": 0.469,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
+      "ts_utc": "2026-10-22 18:00:21",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
-        "hist_competition_hint": "SP1",
+        "hist_competition_hint": null,
         "home": {
           "n_matches": 5,
           "gf_avg": 0.6,
@@ -599,15 +1796,15 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Rayo Vallecano"
+          "name": "FC Lugano"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.2814,
-          "p_draw": 0.257,
-          "p_away": 0.4616,
-          "x_goals_home": 1.115,
-          "x_goals_away": 1.503,
+          "p_home": 0.283,
+          "p_draw": 0.248,
+          "p_away": 0.469,
+          "x_goals_home": 1.182,
+          "x_goals_away": 1.594,
           "yellow_cards_home": 1.72,
           "yellow_cards_away": 2.33,
           "yellow_cards_total": 4.05,
@@ -626,136 +1823,22 @@
           },
           "avg_total_goals": null,
           "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición SP1)."
+          "note_es": "Sin enfrentamientos previos en este CSV."
         }
       }
     },
     {
-      "event_id": 401885480,
-      "local_date_iso": "2026-10-19",
-      "slug": "por.1",
-      "home_team": "Braga",
-      "away_team": "Gil Vicente",
+      "event_id": 401915841,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Kauno Zalgiris",
+      "away_team": "SK Brann",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "P1",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Braga"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Gil Vicente"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición P1)."
-        }
-      }
-    },
-    {
-      "event_id": 401888277,
-      "local_date_iso": "2026-10-19",
-      "slug": "tur.1",
-      "home_team": "Trabzonspor",
-      "away_team": "Besiktas",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "T1",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Trabzonspor"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Besiktas"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición T1)."
-        }
-      }
-    },
-    {
-      "event_id": 401921337,
-      "local_date_iso": "2026-10-19",
-      "slug": "ecu.1",
-      "home_team": "Mushuc Runa",
-      "away_team": "Orense",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
+      "ts_utc": "2026-10-22 18:00:21",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -764,13 +1847,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Mushuc Runa"
+          "name": "Kauno Zalgiris"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Orense"
+          "name": "SK Brann"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -802,17 +1885,17 @@
       }
     },
     {
-      "event_id": 401929257,
-      "local_date_iso": "2026-10-19",
-      "slug": "uru.1",
-      "home_team": "Nacional",
-      "away_team": "Deportivo Maldonado",
+      "event_id": 401915842,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Jablonec",
+      "away_team": "Brighton & Hove Albion",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-19 19:16:45",
+      "ts_utc": "2026-10-22 18:00:21",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -821,13 +1904,298 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Nacional"
+          "name": "Jablonec"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Deportivo Maldonado"
+          "name": "Brighton & Hove Albion"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915843,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Red Star Belgrade",
+      "away_team": "F.C. København",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Red Star Belgrade"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "F.C. København"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915844,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "FC Nordsjælland",
+      "away_team": "CSKA Sofia",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "FC Nordsjælland"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "CSKA Sofia"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915845,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Iberia 1999",
+      "away_team": "Mjällby AIF",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Iberia 1999"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Mjällby AIF"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401915846,
+      "local_date_iso": "2026-10-22",
+      "slug": "uefa.europa.conf",
+      "home_team": "Kairat Almaty",
+      "away_team": "Panathinaikos",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Kairat Almaty"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Panathinaikos"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401929247,
+      "local_date_iso": "2026-10-22",
+      "slug": "col.copa",
+      "home_team": "Barranquilla FC",
+      "away_team": "América de Cali",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-10-22 18:00:21",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Barranquilla FC"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "América de Cali"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
