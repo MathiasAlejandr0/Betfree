@@ -1,20 +1,20 @@
 {
   "schema": "betfree.pages_predictions.v2",
-  "generated_at_utc": "2026-10-29T18:59:12.155836+00:00",
+  "generated_at_utc": "2026-11-02T22:20:45.975484+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
-      "event_id": 401841288,
-      "local_date_iso": "2026-10-29",
+      "event_id": 401841299,
+      "local_date_iso": "2026-11-02",
       "slug": "bra.1",
-      "home_team": "Atlético-MG",
-      "away_team": "Cruzeiro",
+      "home_team": "Red Bull Bragantino",
+      "away_team": "Santos",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -23,13 +23,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Atlético-MG"
+          "name": "Red Bull Bragantino"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Cruzeiro"
+          "name": "Santos"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -61,17 +61,17 @@
       }
     },
     {
-      "event_id": 401841292,
-      "local_date_iso": "2026-10-29",
-      "slug": "bra.1",
-      "home_team": "Vasco da Gama",
-      "away_team": "Flamengo",
+      "event_id": 401841649,
+      "local_date_iso": "2026-11-02",
+      "slug": "arg.1",
+      "home_team": "Platense",
+      "away_team": "Central Córdoba (Santiago del Estero)",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -80,13 +80,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Vasco da Gama"
+          "name": "Platense"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Flamengo"
+          "name": "Central Córdoba (Santiago del Estero)"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -118,17 +118,17 @@
       }
     },
     {
-      "event_id": 401841296,
-      "local_date_iso": "2026-10-29",
-      "slug": "bra.1",
-      "home_team": "Bahia",
-      "away_team": "São Paulo",
+      "event_id": 401841657,
+      "local_date_iso": "2026-11-02",
+      "slug": "arg.1",
+      "home_team": "Defensa y Justicia",
+      "away_team": "Independiente",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -137,13 +137,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Bahia"
+          "name": "Defensa y Justicia"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "São Paulo"
+          "name": "Independiente"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -175,204 +175,33 @@
       }
     },
     {
-      "event_id": 401841297,
-      "local_date_iso": "2026-10-29",
-      "slug": "bra.1",
-      "home_team": "Remo",
-      "away_team": "Botafogo",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Remo"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Botafogo"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401842859,
-      "local_date_iso": "2026-10-29",
+      "event_id": 401842867,
+      "local_date_iso": "2026-11-02",
       "slug": "swe.1",
-      "home_team": "Kalmar FF",
-      "away_team": "GAIS",
+      "home_team": "Mjällby AIF",
+      "away_team": "Kalmar FF",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
         "hist_competition_hint": null,
         "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Kalmar FF"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "GAIS"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401842861,
-      "local_date_iso": "2026-10-29",
-      "slug": "swe.1",
-      "home_team": "Hammarby IF",
-      "away_team": "IK Sirius",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Hammarby IF"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "IK Sirius"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401842865,
-      "local_date_iso": "2026-10-29",
-      "slug": "swe.1",
-      "home_team": "Örgryte IS",
-      "away_team": "Mjällby AIF",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Örgryte IS"
-        },
-        "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
           "name": "Mjällby AIF"
         },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Kalmar FF"
+        },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
           "p_home": 0.3975,
@@ -403,131 +232,17 @@
       }
     },
     {
-      "event_id": 401874969,
-      "local_date_iso": "2026-10-29",
-      "slug": "ita.1",
-      "home_team": "Fiorentina",
-      "away_team": "Atalanta",
+      "event_id": 401842870,
+      "local_date_iso": "2026-11-02",
+      "slug": "swe.1",
+      "home_team": "GAIS",
+      "away_team": "AIK",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "I1",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Fiorentina"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Atalanta"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición I1)."
-        }
-      }
-    },
-    {
-      "event_id": 401874976,
-      "local_date_iso": "2026-10-29",
-      "slug": "ita.1",
-      "home_team": "Frosinone",
-      "away_team": "Lecce",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": "I1",
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Frosinone"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Lecce"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV (competición I1)."
-        }
-      }
-    },
-    {
-      "event_id": 401877878,
-      "local_date_iso": "2026-10-29",
-      "slug": "col.1",
-      "home_team": "Internacional de Bogotá",
-      "away_team": "Independiente Medellín",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -536,13 +251,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Internacional de Bogotá"
+          "name": "GAIS"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Independiente Medellín"
+          "name": "AIK"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -574,17 +289,359 @@
       }
     },
     {
-      "event_id": 401878035,
-      "local_date_iso": "2026-10-29",
+      "event_id": 401850678,
+      "local_date_iso": "2026-11-02",
+      "slug": "chi.1",
+      "home_team": "Deportes Limache",
+      "away_team": "Audax Italiano",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-11-02 22:20:45",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Deportes Limache"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Audax Italiano"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401850679,
+      "local_date_iso": "2026-11-02",
+      "slug": "chi.1",
+      "home_team": "Deportes Concepcion",
+      "away_team": "Palestino",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-11-02 22:20:45",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Deportes Concepcion"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Palestino"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401874494,
+      "local_date_iso": "2026-11-02",
+      "slug": "den.1",
+      "home_team": "Sønderjyske Fodbold",
+      "away_team": "F.C. København",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-11-02 22:20:45",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": null,
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Sønderjyske Fodbold"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "F.C. København"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV."
+        }
+      }
+    },
+    {
+      "event_id": 401874963,
+      "local_date_iso": "2026-11-02",
+      "slug": "ita.1",
+      "home_team": "Sassuolo",
+      "away_team": "Fiorentina",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-11-02 22:20:45",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": "I1",
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Sassuolo"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Fiorentina"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV (competición I1)."
+        }
+      }
+    },
+    {
+      "event_id": 401874971,
+      "local_date_iso": "2026-11-02",
+      "slug": "ita.1",
+      "home_team": "Atalanta",
+      "away_team": "Parma",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-11-02 22:20:45",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": "I1",
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Atalanta"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Parma"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV (competición I1)."
+        }
+      }
+    },
+    {
+      "event_id": 401876419,
+      "local_date_iso": "2026-11-02",
+      "slug": "fra.1",
+      "home_team": "Lorient",
+      "away_team": "Brest",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-11-02 22:20:45",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": "F1",
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Lorient"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Brest"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV (competición F1)."
+        }
+      }
+    },
+    {
+      "event_id": 401877772,
+      "local_date_iso": "2026-11-02",
       "slug": "col.1",
-      "home_team": "América de Cali",
+      "home_team": "Águilas Doradas",
       "away_team": "Fortaleza CEIF",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -593,7 +650,7 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "América de Cali"
+          "name": "Águilas Doradas"
         },
         "away": {
           "n_matches": 0,
@@ -631,216 +688,45 @@
       }
     },
     {
-      "event_id": 401886131,
-      "local_date_iso": "2026-10-29",
-      "slug": "per.1",
-      "home_team": "Sporting Cristal",
-      "away_team": "Alianza Lima",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
+      "event_id": 401878762,
+      "local_date_iso": "2026-11-02",
+      "slug": "eng.1",
+      "home_team": "Newcastle United",
+      "away_team": "Everton",
+      "p_home": 0.3381,
+      "p_draw": 0.245,
+      "p_away": 0.4169,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
-        "hist_competition_hint": null,
+        "hist_competition_hint": "E0",
         "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Sporting Cristal"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Alianza Lima"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401886152,
-      "local_date_iso": "2026-10-29",
-      "slug": "per.1",
-      "home_team": "Cienciano del Cusco",
-      "away_team": "Atlético Grau",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Cienciano del Cusco"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Atlético Grau"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401886155,
-      "local_date_iso": "2026-10-29",
-      "slug": "per.1",
-      "home_team": "Los Chankas",
-      "away_team": "Cusco FC",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Los Chankas"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Cusco FC"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401921844,
-      "local_date_iso": "2026-10-29",
-      "slug": "eng.league_cup",
-      "home_team": "Everton",
-      "away_team": "Newcastle United",
-      "p_home": 0.4615,
-      "p_draw": 0.2489,
-      "p_away": 0.2897,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 5,
-          "gf_avg": 1.6,
-          "ga_avg": 0.8,
-          "name": "Everton"
-        },
-        "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
           "name": "Newcastle United"
         },
+        "away": {
+          "n_matches": 5,
+          "gf_avg": 1.6,
+          "ga_avg": 0.8,
+          "name": "Everton"
+        },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.4615,
-          "p_draw": 0.2489,
-          "p_away": 0.2897,
-          "x_goals_home": 1.578,
-          "x_goals_away": 1.198,
-          "yellow_cards_home": 2.3,
-          "yellow_cards_away": 1.75,
+          "p_home": 0.3381,
+          "p_draw": 0.245,
+          "p_away": 0.4169,
+          "x_goals_home": 1.378,
+          "x_goals_away": 1.556,
+          "yellow_cards_home": 1.9,
+          "yellow_cards_away": 2.15,
           "yellow_cards_total": 4.05,
-          "corners_home": 4.94,
-          "corners_away": 4.56,
+          "corners_home": 4.66,
+          "corners_away": 4.84,
           "corners_total": 9.5
         },
         "h2h": {
@@ -854,22 +740,22 @@
           },
           "avg_total_goals": null,
           "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
+          "note_es": "Sin enfrentamientos previos en este CSV (competición E0)."
         }
       }
     },
     {
-      "event_id": 401925224,
-      "local_date_iso": "2026-10-29",
-      "slug": "ned.cup",
-      "home_team": "Kozakken Boys",
-      "away_team": "FC Utrecht",
+      "event_id": 401879822,
+      "local_date_iso": "2026-11-02",
+      "slug": "rus.1",
+      "home_team": "Krylia Sovetov",
+      "away_team": "Zenit St Petersburg",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -878,13 +764,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Kozakken Boys"
+          "name": "Krylia Sovetov"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "FC Utrecht"
+          "name": "Zenit St Petersburg"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -916,767 +802,26 @@
       }
     },
     {
-      "event_id": 401925227,
-      "local_date_iso": "2026-10-29",
-      "slug": "ned.cup",
-      "home_team": "Purmersteijn",
-      "away_team": "Gemert",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Purmersteijn"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Gemert"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401925229,
-      "local_date_iso": "2026-10-29",
-      "slug": "ned.cup",
-      "home_team": "RKAV Volendam",
-      "away_team": "ROHDA Raalte",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "RKAV Volendam"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "ROHDA Raalte"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401925231,
-      "local_date_iso": "2026-10-29",
-      "slug": "ned.cup",
-      "home_team": "ACV",
-      "away_team": "AFC",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "ACV"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "AFC"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401925232,
-      "local_date_iso": "2026-10-29",
-      "slug": "ned.cup",
-      "home_team": "GVVV",
-      "away_team": "Noordwijk",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "GVVV"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Noordwijk"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401925234,
-      "local_date_iso": "2026-10-29",
-      "slug": "ned.cup",
-      "home_team": "HSV Hoek",
-      "away_team": "Sparta Nijkerk",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "HSV Hoek"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Sparta Nijkerk"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401925237,
-      "local_date_iso": "2026-10-29",
-      "slug": "ned.cup",
-      "home_team": "FC Groningen",
-      "away_team": "FC Emmen",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "FC Groningen"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "FC Emmen"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401925238,
-      "local_date_iso": "2026-10-29",
-      "slug": "ned.cup",
-      "home_team": "De Treffers",
-      "away_team": "Heracles Almelo",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "De Treffers"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Heracles Almelo"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401926287,
-      "local_date_iso": "2026-10-29",
-      "slug": "arg.copa",
-      "home_team": "Atlético Tucumán",
-      "away_team": "Platense",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Atlético Tucumán"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Platense"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928489,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Ribadesella",
-      "away_team": "Racing Santander",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Ribadesella"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Racing Santander"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928490,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Numancia",
-      "away_team": "Real Oviedo",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Numancia"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Real Oviedo"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928491,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "CD Laredo",
-      "away_team": "Burgos",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "CD Laredo"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Burgos"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928492,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Guijuelo",
-      "away_team": "Sporting Gijón",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Guijuelo"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Sporting Gijón"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928494,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Coruxo",
-      "away_team": "Zamora CF",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Coruxo"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Zamora CF"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928496,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Atlético Calatayud",
+      "event_id": 401882824,
+      "local_date_iso": "2026-11-02",
+      "slug": "esp.1",
+      "home_team": "Deportivo",
       "away_team": "Osasuna",
-      "p_home": 0.3891,
-      "p_draw": 0.2539,
-      "p_away": 0.357,
+      "p_home": 0.3842,
+      "p_draw": 0.2627,
+      "p_away": 0.3532,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
-        "hist_competition_hint": null,
+        "hist_competition_hint": "SP1",
         "home": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Atlético Calatayud"
+          "name": "Deportivo"
         },
         "away": {
           "n_matches": 5,
@@ -1686,11 +831,11 @@
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3891,
-          "p_draw": 0.2539,
-          "p_away": 0.357,
-          "x_goals_home": 1.423,
-          "x_goals_away": 1.353,
+          "p_home": 0.3842,
+          "p_draw": 0.2627,
+          "p_away": 0.3532,
+          "x_goals_home": 1.342,
+          "x_goals_away": 1.276,
           "yellow_cards_home": 2.08,
           "yellow_cards_away": 1.97,
           "yellow_cards_total": 4.05,
@@ -1709,22 +854,136 @@
           },
           "avg_total_goals": null,
           "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
+          "note_es": "Sin enfrentamientos previos en este CSV (competición SP1)."
         }
       }
     },
     {
-      "event_id": 401928498,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "CD Varea",
-      "away_team": "FC Andorra",
+      "event_id": 401885403,
+      "local_date_iso": "2026-11-02",
+      "slug": "por.1",
+      "home_team": "Benfica",
+      "away_team": "Alverca",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": "P1",
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Benfica"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Alverca"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV (competición P1)."
+        }
+      }
+    },
+    {
+      "event_id": 401885407,
+      "local_date_iso": "2026-11-02",
+      "slug": "por.1",
+      "home_team": "Gil Vicente",
+      "away_team": "Vitória de Guimaraes",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-11-02 22:20:45",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": "P1",
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Gil Vicente"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Vitória de Guimaraes"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV (competición P1)."
+        }
+      }
+    },
+    {
+      "event_id": 401886125,
+      "local_date_iso": "2026-11-02",
+      "slug": "per.1",
+      "home_team": "Sporting Cristal",
+      "away_team": "FC Cajamarca",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -1733,13 +992,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "CD Varea"
+          "name": "Sporting Cristal"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "FC Andorra"
+          "name": "FC Cajamarca"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -1771,17 +1030,17 @@
       }
     },
     {
-      "event_id": 401928507,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Auriense Cented Academy",
-      "away_team": "Deportivo",
+      "event_id": 401886127,
+      "local_date_iso": "2026-11-02",
+      "slug": "per.1",
+      "home_team": "Sport Huancayo",
+      "away_team": "Melgar",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -1790,13 +1049,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Auriense Cented Academy"
+          "name": "Sport Huancayo"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Deportivo"
+          "name": "Melgar"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -1828,17 +1087,17 @@
       }
     },
     {
-      "event_id": 401928511,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Covadonga",
-      "away_team": "Real Valladolid",
+      "event_id": 401886147,
+      "local_date_iso": "2026-11-02",
+      "slug": "per.1",
+      "home_team": "UTC",
+      "away_team": "Deportivo Garcilaso",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -1847,13 +1106,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Covadonga"
+          "name": "UTC"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Real Valladolid"
+          "name": "Deportivo Garcilaso"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -1885,17 +1144,188 @@
       }
     },
     {
-      "event_id": 401928512,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Real Ávila",
-      "away_team": "Unionistas de Salamanca",
+      "event_id": 401888260,
+      "local_date_iso": "2026-11-02",
+      "slug": "tur.1",
+      "home_team": "Genclerbirligi",
+      "away_team": "Alanyaspor",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": "T1",
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Genclerbirligi"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Alanyaspor"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV (competición T1)."
+        }
+      }
+    },
+    {
+      "event_id": 401896739,
+      "local_date_iso": "2026-11-02",
+      "slug": "gre.1",
+      "home_team": "Atromitos",
+      "away_team": "Volos NFC",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-11-02 22:20:45",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": "G1",
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Atromitos"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Volos NFC"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV (competición G1)."
+        }
+      }
+    },
+    {
+      "event_id": 401896813,
+      "local_date_iso": "2026-11-02",
+      "slug": "gre.1",
+      "home_team": "Kalamata",
+      "away_team": "Iraklis",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-11-02 22:20:45",
+      "team_stats": {
+        "schema": "betfree.pages_team_stats.v1",
+        "recent_matches": 5,
+        "hist_competition_hint": "G1",
+        "home": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Kalamata"
+        },
+        "away": {
+          "n_matches": 0,
+          "gf_avg": null,
+          "ga_avg": null,
+          "name": "Iraklis"
+        },
+        "match_model_estimate": {
+          "label_es": "Heurística del modelo para este encuentro",
+          "p_home": 0.3975,
+          "p_draw": 0.2536,
+          "p_away": 0.3489,
+          "x_goals_home": 1.442,
+          "x_goals_away": 1.335,
+          "yellow_cards_home": 2.1,
+          "yellow_cards_away": 1.95,
+          "yellow_cards_total": 4.05,
+          "corners_home": 4.8,
+          "corners_away": 4.7,
+          "corners_total": 9.5
+        },
+        "h2h": {
+          "schema": "betfree.pages_h2h.v1",
+          "meetings": 0,
+          "competition_filter": null,
+          "record_wdl_home": {
+            "w": 0,
+            "d": 0,
+            "l": 0
+          },
+          "avg_total_goals": null,
+          "recent": [],
+          "note_es": "Sin enfrentamientos previos en este CSV (competición G1)."
+        }
+      }
+    },
+    {
+      "event_id": 401921373,
+      "local_date_iso": "2026-11-02",
+      "slug": "ecu.1",
+      "home_team": "Orense",
+      "away_team": "Técnico Universitario",
+      "p_home": 0.3975,
+      "p_draw": 0.2536,
+      "p_away": 0.3489,
+      "used_ml": false,
+      "blend_ml_w": 0.0,
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -1904,13 +1334,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Real Ávila"
+          "name": "Orense"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Unionistas de Salamanca"
+          "name": "Técnico Universitario"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -1942,17 +1372,17 @@
       }
     },
     {
-      "event_id": 401928513,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "AE Prat",
-      "away_team": "Athletic Club",
+      "event_id": 401930019,
+      "local_date_iso": "2026-11-02",
+      "slug": "bol.1",
+      "home_team": "Real Tomayapo",
+      "away_team": "Blooming",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -1961,13 +1391,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "AE Prat"
+          "name": "Real Tomayapo"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Athletic Club"
+          "name": "Blooming"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -1999,17 +1429,17 @@
       }
     },
     {
-      "event_id": 401928515,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Peña Sport",
-      "away_team": "Huesca",
+      "event_id": 401930556,
+      "local_date_iso": "2026-11-02",
+      "slug": "col.copa",
+      "home_team": "Independiente Santa Fe",
+      "away_team": "Once Caldas",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -2018,13 +1448,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Peña Sport"
+          "name": "Independiente Santa Fe"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Huesca"
+          "name": "Once Caldas"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -2056,17 +1486,17 @@
       }
     },
     {
-      "event_id": 401928517,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Gimnástica Torrelavega",
-      "away_team": "UD Ourense",
+      "event_id": 401931236,
+      "local_date_iso": "2026-11-02",
+      "slug": "uru.1",
+      "home_team": "Albion FC",
+      "away_team": "Deportivo Maldonado",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
+      "ts_utc": "2026-11-02 22:20:45",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -2075,13 +1505,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Gimnástica Torrelavega"
+          "name": "Albion FC"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "UD Ourense"
+          "name": "Deportivo Maldonado"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -2095,576 +1525,6 @@
           "yellow_cards_total": 4.05,
           "corners_home": 4.8,
           "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928523,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Antequera CF",
-      "away_team": "Aguilas",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Antequera CF"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Aguilas"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928525,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Poblense",
-      "away_team": "Ceuta",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Poblense"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Ceuta"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928526,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "UB Lebrijana",
-      "away_team": "Getafe",
-      "p_home": 0.5182,
-      "p_draw": 0.2405,
-      "p_away": 0.2413,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "UB Lebrijana"
-        },
-        "away": {
-          "n_matches": 5,
-          "gf_avg": 0.6,
-          "ga_avg": 1.8,
-          "name": "Getafe"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.5182,
-          "p_draw": 0.2405,
-          "p_away": 0.2413,
-          "x_goals_home": 1.697,
-          "x_goals_away": 1.079,
-          "yellow_cards_home": 2.48,
-          "yellow_cards_away": 1.57,
-          "yellow_cards_total": 4.05,
-          "corners_home": 5.07,
-          "corners_away": 4.43,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928528,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Mijas Las Lagunas",
-      "away_team": "Real Jaen CF",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Mijas Las Lagunas"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Real Jaen CF"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928529,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Atlético Baleares",
-      "away_team": "Eldense",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Atlético Baleares"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Eldense"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928530,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Cieza",
-      "away_team": "Granada",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Cieza"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Granada"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928531,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Conquense",
-      "away_team": "Castellón",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Conquense"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Castellón"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928535,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "San Sebastián de los Reyes",
-      "away_team": "Coria",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "San Sebastián de los Reyes"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Coria"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928548,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Xerez",
-      "away_team": "Cádiz",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Xerez"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Cádiz"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401928552,
-      "local_date_iso": "2026-10-29",
-      "slug": "esp.copa_del_rey",
-      "home_team": "Sporting Hortaleza",
-      "away_team": "Sevilla",
-      "p_home": 0.4858,
-      "p_draw": 0.2457,
-      "p_away": 0.2685,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-10-29 18:59:11",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Sporting Hortaleza"
-        },
-        "away": {
-          "n_matches": 5,
-          "gf_avg": 1.4,
-          "ga_avg": 2.2,
-          "name": "Sevilla"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.4858,
-          "p_draw": 0.2457,
-          "p_away": 0.2685,
-          "x_goals_home": 1.629,
-          "x_goals_away": 1.147,
-          "yellow_cards_home": 2.38,
-          "yellow_cards_away": 1.67,
-          "yellow_cards_total": 4.05,
-          "corners_home": 5.0,
-          "corners_away": 4.5,
           "corners_total": 9.5
         },
         "h2h": {
