@@ -1,20 +1,20 @@
 {
   "schema": "betfree.pages_predictions.v2",
-  "generated_at_utc": "2026-11-12T20:49:18.331543+00:00",
+  "generated_at_utc": "2026-11-16T22:54:07.062282+00:00",
   "db_path_hint": "betfree.db",
   "items": [
     {
-      "event_id": 401861145,
-      "local_date_iso": "2026-11-12",
+      "event_id": 401861179,
+      "local_date_iso": "2026-11-16",
       "slug": "uefa.nations",
-      "home_team": "Türkiye",
-      "away_team": "Belgium",
+      "home_team": "Gibraltar",
+      "away_team": "Malta",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -23,13 +23,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Türkiye"
+          "name": "Gibraltar"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Belgium"
+          "name": "Malta"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -61,17 +61,17 @@
       }
     },
     {
-      "event_id": 401861147,
-      "local_date_iso": "2026-11-12",
+      "event_id": 401861180,
+      "local_date_iso": "2026-11-16",
       "slug": "uefa.nations",
-      "home_team": "Albania",
-      "away_team": "Finland",
+      "home_team": "Faroe Islands",
+      "away_team": "Moldova",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -80,13 +80,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Albania"
+          "name": "Faroe Islands"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Finland"
+          "name": "Moldova"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -118,17 +118,17 @@
       }
     },
     {
-      "event_id": 401861148,
-      "local_date_iso": "2026-11-12",
+      "event_id": 401861181,
+      "local_date_iso": "2026-11-16",
       "slug": "uefa.nations",
-      "home_team": "Czechia",
-      "away_team": "Spain",
+      "home_team": "Kazakhstan",
+      "away_team": "Slovakia",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -137,13 +137,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Czechia"
+          "name": "Kazakhstan"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Spain"
+          "name": "Slovakia"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -175,17 +175,17 @@
       }
     },
     {
-      "event_id": 401861149,
-      "local_date_iso": "2026-11-12",
+      "event_id": 401861182,
+      "local_date_iso": "2026-11-16",
       "slug": "uefa.nations",
-      "home_team": "San Marino",
-      "away_team": "Belarus",
+      "home_team": "Iceland",
+      "away_team": "Luxembourg",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -194,13 +194,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "San Marino"
+          "name": "Iceland"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Belarus"
+          "name": "Luxembourg"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -232,17 +232,17 @@
       }
     },
     {
-      "event_id": 401861150,
-      "local_date_iso": "2026-11-12",
+      "event_id": 401861183,
+      "local_date_iso": "2026-11-16",
       "slug": "uefa.nations",
-      "home_team": "England",
-      "away_team": "Croatia",
+      "home_team": "Estonia",
+      "away_team": "Bulgaria",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -251,13 +251,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "England"
+          "name": "Estonia"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Croatia"
+          "name": "Bulgaria"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -289,17 +289,17 @@
       }
     },
     {
-      "event_id": 401861151,
-      "local_date_iso": "2026-11-12",
+      "event_id": 401861184,
+      "local_date_iso": "2026-11-16",
       "slug": "uefa.nations",
-      "home_team": "Italy",
-      "away_team": "France",
+      "home_team": "Lithuania",
+      "away_team": "Liechtenstein",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -308,13 +308,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Italy"
+          "name": "Lithuania"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "France"
+          "name": "Liechtenstein"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -346,17 +346,17 @@
       }
     },
     {
-      "event_id": 401861152,
-      "local_date_iso": "2026-11-12",
+      "event_id": 401861185,
+      "local_date_iso": "2026-11-16",
       "slug": "uefa.nations",
-      "home_team": "Montenegro",
-      "away_team": "Latvia",
+      "home_team": "Germany",
+      "away_team": "Netherlands",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -365,13 +365,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Montenegro"
+          "name": "Germany"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Latvia"
+          "name": "Netherlands"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -403,17 +403,17 @@
       }
     },
     {
-      "event_id": 401875813,
-      "local_date_iso": "2026-11-12",
-      "slug": "arg.supercopa",
-      "home_team": "Estudiantes de La Plata",
-      "away_team": "Independiente Rivadavia",
+      "event_id": 401861186,
+      "local_date_iso": "2026-11-16",
+      "slug": "uefa.nations",
+      "home_team": "Switzerland",
+      "away_team": "Scotland",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -422,13 +422,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Estudiantes de La Plata"
+          "name": "Switzerland"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Independiente Rivadavia"
+          "name": "Scotland"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -460,17 +460,17 @@
       }
     },
     {
-      "event_id": 401878034,
-      "local_date_iso": "2026-11-12",
-      "slug": "col.1",
-      "home_team": "Deportivo Pasto",
-      "away_team": "Atlético Junior",
+      "event_id": 401861187,
+      "local_date_iso": "2026-11-16",
+      "slug": "uefa.nations",
+      "home_team": "North Macedonia",
+      "away_team": "Slovenia",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -479,13 +479,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Deportivo Pasto"
+          "name": "North Macedonia"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Atlético Junior"
+          "name": "Slovenia"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -517,17 +517,17 @@
       }
     },
     {
-      "event_id": 401928506,
-      "local_date_iso": "2026-11-12",
-      "slug": "esp.copa_del_rey",
-      "home_team": "CS Puertollano",
-      "away_team": "Albacete",
+      "event_id": 401861188,
+      "local_date_iso": "2026-11-16",
+      "slug": "uefa.nations",
+      "home_team": "Greece",
+      "away_team": "Serbia",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -536,13 +536,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "CS Puertollano"
+          "name": "Greece"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Albacete"
+          "name": "Serbia"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -574,17 +574,17 @@
       }
     },
     {
-      "event_id": 401928527,
-      "local_date_iso": "2026-11-12",
-      "slug": "esp.copa_del_rey",
-      "home_team": "CD Tarancon",
-      "away_team": "Levante",
+      "event_id": 401886119,
+      "local_date_iso": "2026-11-16",
+      "slug": "per.1",
+      "home_team": "Deportivo Moquegua",
+      "away_team": "Atlético Grau",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -593,13 +593,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "CD Tarancon"
+          "name": "Deportivo Moquegua"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Levante"
+          "name": "Atlético Grau"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -631,17 +631,17 @@
       }
     },
     {
-      "event_id": 401928551,
-      "local_date_iso": "2026-11-12",
-      "slug": "esp.copa_del_rey",
-      "home_team": "CD Artistico Navalcarnero",
-      "away_team": "Real Betis",
+      "event_id": 401886121,
+      "local_date_iso": "2026-11-16",
+      "slug": "per.1",
+      "home_team": "Cusco FC",
+      "away_team": "ADT",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -650,13 +650,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "CD Artistico Navalcarnero"
+          "name": "Cusco FC"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Real Betis"
+          "name": "ADT"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -688,17 +688,17 @@
       }
     },
     {
-      "event_id": 401930994,
-      "local_date_iso": "2026-11-12",
-      "slug": "ven.1",
-      "home_team": "Academia Puerto Cabello",
-      "away_team": "Monagas SC",
+      "event_id": 401886134,
+      "local_date_iso": "2026-11-16",
+      "slug": "per.1",
+      "home_team": "UTC",
+      "away_team": "Los Chankas",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -707,13 +707,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Academia Puerto Cabello"
+          "name": "UTC"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Monagas SC"
+          "name": "Los Chankas"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
@@ -745,74 +745,17 @@
       }
     },
     {
-      "event_id": 401932846,
-      "local_date_iso": "2026-11-12",
-      "slug": "fra.coupe_de_france",
-      "home_team": "Chambéry Savoie",
-      "away_team": "Grenoble",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Chambéry Savoie"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Grenoble"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401933238,
-      "local_date_iso": "2026-11-12",
+      "event_id": 401933375,
+      "local_date_iso": "2026-11-16",
       "slug": "uru.1",
-      "home_team": "Cerro Largo",
-      "away_team": "Progreso",
+      "home_team": "Montevideo Wanderers",
+      "away_team": "Juventud",
       "p_home": 0.3975,
       "p_draw": 0.2536,
       "p_away": 0.3489,
       "used_ml": false,
       "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:18",
+      "ts_utc": "2026-11-16 22:54:06",
       "team_stats": {
         "schema": "betfree.pages_team_stats.v1",
         "recent_matches": 5,
@@ -821,70 +764,13 @@
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Cerro Largo"
+          "name": "Montevideo Wanderers"
         },
         "away": {
           "n_matches": 0,
           "gf_avg": null,
           "ga_avg": null,
-          "name": "Progreso"
-        },
-        "match_model_estimate": {
-          "label_es": "Heurística del modelo para este encuentro",
-          "p_home": 0.3975,
-          "p_draw": 0.2536,
-          "p_away": 0.3489,
-          "x_goals_home": 1.442,
-          "x_goals_away": 1.335,
-          "yellow_cards_home": 2.1,
-          "yellow_cards_away": 1.95,
-          "yellow_cards_total": 4.05,
-          "corners_home": 4.8,
-          "corners_away": 4.7,
-          "corners_total": 9.5
-        },
-        "h2h": {
-          "schema": "betfree.pages_h2h.v1",
-          "meetings": 0,
-          "competition_filter": null,
-          "record_wdl_home": {
-            "w": 0,
-            "d": 0,
-            "l": 0
-          },
-          "avg_total_goals": null,
-          "recent": [],
-          "note_es": "Sin enfrentamientos previos en este CSV."
-        }
-      }
-    },
-    {
-      "event_id": 401861146,
-      "local_date_iso": "2026-11-12",
-      "slug": "uefa.nations",
-      "home_team": "Armenia",
-      "away_team": "Cyprus",
-      "p_home": 0.3975,
-      "p_draw": 0.2536,
-      "p_away": 0.3489,
-      "used_ml": false,
-      "blend_ml_w": 0.0,
-      "ts_utc": "2026-11-12 20:49:17",
-      "team_stats": {
-        "schema": "betfree.pages_team_stats.v1",
-        "recent_matches": 5,
-        "hist_competition_hint": null,
-        "home": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Armenia"
-        },
-        "away": {
-          "n_matches": 0,
-          "gf_avg": null,
-          "ga_avg": null,
-          "name": "Cyprus"
+          "name": "Juventud"
         },
         "match_model_estimate": {
           "label_es": "Heurística del modelo para este encuentro",
